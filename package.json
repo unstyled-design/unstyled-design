@@ -14,12 +14,22 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "prepare": "husky install"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.0.0",
+    "@commitlint/config-conventional": "^17.0.0",
     "@developer-plus/eslint-config": "^0.1.1",
     "eslint": "^8.16.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^12.4.1",
     "typescript": "^4.6.4"
+  },
+  "lint-staged": {
+    "*.{js,ts,json,md}": [
+      "eslint --fix"
+    ]
   },
   "eslintConfig": {
     "extends": "@developer-plus"
