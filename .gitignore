@@ -1,0 +1,21 @@
+.cache
+*.log
+*.tgz
+coverage
+dist
+lib-cov
+logs
+node_modules
+temp
+*prettier*
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
