@@ -10,12 +10,16 @@
     "directory": "packages/unstyled-design-ui",
     "url": "git+https://github.com/unstyled-design/unstyled-design.git"
   },
-  "main": "index.js",
+  "main": "src/index.ts",
+  "typings": "src/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bugs": {
     "url": "https://github.com/unstyled-design/unstyled-design/issues"
   },
-  "homepage": "https://github.com/unstyled-design/unstyled-design#readme"
+  "homepage": "https://github.com/unstyled-design/unstyled-design#readme",
+  "dependencies": {
+    "vue": "^3.2.25"
+  }
 }

@@ -1,5 +1,7 @@
+<script setup lang="ts">
+import { UButton } from '@unstyled-design/ui'
+</script>
+
 <template>
-  <div class="bg-red">
-    unstyled-design playground
-  </div>
+  <u-button />
 </template>
