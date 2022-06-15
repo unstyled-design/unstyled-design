@@ -3,5 +3,5 @@ import { UButton } from '@unstyled-design/ui'
 </script>
 
 <template>
-  <u-button />
+  <u-button>Default Button</u-button>
 </template>
