@@ -1,17 +1,10 @@
 {
   "name": "unstyled-design-monorepo",
   "version": "0.0.1",
-  "private": true,
   "packageManager": "pnpm@7.1.0",
-  "description": "",
-  "keywords": [],
+  "private": true,
   "license": "MIT",
   "author": "Hongbusi",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/unstyled-design/unstyled-design.git"
-  },
-  "main": "index.js",
   "scripts": {
     "play": "pnpm -C playground run dev",
     "lint": "eslint .",
@@ -34,9 +27,5 @@
   },
   "eslintConfig": {
     "extends": "@hongbusi"
-  },
-  "bugs": {
-    "url": "https://github.com/unstyled-design/unstyled-design/issues"
-  },
-  "homepage": "https://github.com/unstyled-design/unstyled-design#readme"
+  }
 }
