@@ -1,12 +1,27 @@
 {
   "name": "unstyled-design-monorepo",
   "version": "0.0.1",
-  "packageManager": "pnpm@7.1.0",
   "private": true,
-  "license": "MIT",
+  "packageManager": "pnpm@7.1.0",
   "author": "Hongbusi",
+  "license": "MIT",
   "scripts": {
-    "play": "pnpm -C playground run dev"
+    "play": "pnpm -C playground run dev",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.2.0",
+    "@commitlint/config-conventional": "^17.2.0",
+    "@hongbusi/eslint-config": "^0.3.4",
+    "eslint": "^8.26.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "typescript": "^4.5.4"
+  },
+  "lint-staged": {
+    "*.{vue,js,jsx,ts,tsx,json,md}": "eslint --fix"
   },
   "eslintConfig": {
     "extends": "@hongbusi"

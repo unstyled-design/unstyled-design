@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { UButton } from '@unstyled-design/ui'
+import { Button } from 'unstyled-design'
 </script>
 
 <template>
-  <u-button>Default Button</u-button>
+  <Button>Default Button</Button>
 </template>
