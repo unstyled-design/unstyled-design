@@ -9,7 +9,8 @@
   },
   "dependencies": {
     "@unocss/reset": "^0.38.2",
-    "@unstyled-design/ui": "workspace:*",
+    "unstyled-design": "workspace:*",
+    "@unstyled-design/preset-uno": "workspace:*",
     "vue": "^3.2.25"
   },
   "devDependencies": {
