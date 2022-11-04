@@ -1,5 +1,5 @@
 {
-  "name": "@unstyled-design/ui",
+  "name": "@unstyled-design/preset-uno",
   "version": "0.0.1",
   "description": "",
   "keywords": [],
@@ -7,8 +7,8 @@
   "author": "",
   "repository": {
     "type": "git",
-    "directory": "packages/unstyled-design-ui",
-    "url": "git+https://github.com/unstyled-design/unstyled-design.git"
+    "url": "git+https://github.com/unstyled-design/unstyled-design.git",
+    "directory": "packages/preset-uno"
   },
   "main": "src/index.ts",
   "scripts": {

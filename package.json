@@ -6,7 +6,7 @@
   "description": "",
   "keywords": [],
   "license": "MIT",
-  "author": "",
+  "author": "Hongbusi",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/unstyled-design/unstyled-design.git"
@@ -21,7 +21,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.0.0",
     "@commitlint/config-conventional": "^17.0.0",
-    "@developer-plus/eslint-config": "^0.1.1",
+    "@hongbusi/eslint-config": "^0.3.4",
     "eslint": "^8.16.0",
     "husky": "^8.0.1",
     "lint-staged": "^12.4.1",
@@ -33,7 +33,7 @@
     ]
   },
   "eslintConfig": {
-    "extends": "@developer-plus"
+    "extends": "@hongbusi"
   },
   "bugs": {
     "url": "https://github.com/unstyled-design/unstyled-design/issues"
