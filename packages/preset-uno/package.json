@@ -2,23 +2,20 @@
   "name": "@unstyled-design/preset-uno",
   "version": "0.0.1",
   "description": "",
-  "keywords": [],
-  "license": "MIT",
   "author": "",
+  "license": "MIT",
+  "homepage": "https://github.com/unstyled-design/unstyled-design#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/unstyled-design/unstyled-design.git",
     "directory": "packages/preset-uno"
   },
-  "main": "src/index.ts",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "bugs": {
     "url": "https://github.com/unstyled-design/unstyled-design/issues"
   },
-  "homepage": "https://github.com/unstyled-design/unstyled-design#readme",
-  "dependencies": {
-    "vue": "^3.2.25"
+  "keywords": [],
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
