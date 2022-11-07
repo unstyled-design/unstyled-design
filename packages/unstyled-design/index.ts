@@ -1,3 +1,3 @@
-import Button from './button'
+import 'uno.css'
 
-export default Button
+export * from './button'

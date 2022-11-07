@@ -1,3 +1,5 @@
-import Button from './src/index.vue'
+import UnButton from './src/index.vue'
 
-export default Button
+export {
+  UnButton
+}

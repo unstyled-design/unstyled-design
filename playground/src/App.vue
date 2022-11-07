@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import Button from 'unstyled-design'
+import { UnButton } from 'unstyled-design'
 </script>
 
 <template>
-  <Button>Default Button</Button>
+  <UnButton>Default Button</UnButton>
 </template>

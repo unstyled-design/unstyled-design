@@ -1,5 +1,6 @@
 {
   "name": "unstyled-design",
+  "type": "module",
   "version": "0.0.1",
   "description": "",
   "author": "",
@@ -14,7 +15,18 @@
     "url": "https://github.com/unstyled-design/unstyled-design/issues"
   },
   "keywords": [],
-  "main": "./dist/unstyled-design.mjs",
+  "exports": {
+    ".": {
+      "require": "./dist/unstyled-design.umd.cjs",
+      "import": "./dist/unstyled-design.js"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "main": "./dist/unstyled-design.umd.cjs",
+  "module": "./dist/unstyled-design.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "vite build"
   }
