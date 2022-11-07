@@ -1,5 +1,6 @@
 {
   "name": "@unstyled-design/preset-uno",
+  "type": "module",
   "version": "0.0.1",
   "description": "",
   "author": "",
@@ -14,8 +15,20 @@
     "url": "https://github.com/unstyled-design/unstyled-design/issues"
   },
   "keywords": [],
-  "main": "src/index.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/preset-uno.d.ts",
+      "require": "./dist/preset-uno.js",
+      "import": "./dist/preset-uno.mjs"
+    }
+  },
+  "main": "./dist/preset-uno.js",
+  "module": "./dist/preset-uno.mjs",
+  "types": "./dist/preset-uno.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "vite build"
   }
 }

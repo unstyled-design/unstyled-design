@@ -29,5 +29,8 @@
   ],
   "scripts": {
     "build": "vite build"
+  },
+  "dependencies": {
+    "@unstyled-design/preset-uno": "workspace:*"
   }
 }

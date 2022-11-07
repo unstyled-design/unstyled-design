@@ -34,7 +34,10 @@ importers:
     specifiers: {}
 
   packages/unstyled-design:
-    specifiers: {}
+    specifiers:
+      '@unstyled-design/preset-uno': workspace:*
+    dependencies:
+      '@unstyled-design/preset-uno': link:../preset-uno
 
   playground:
     specifiers:
