@@ -1,2 +1,3 @@
-// eslint-disable-next-line import/export
-export * from './button'
+import Button from './button'
+
+export default Button

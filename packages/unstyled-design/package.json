@@ -2,20 +2,20 @@
   "name": "unstyled-design",
   "version": "0.0.1",
   "description": "",
-  "keywords": [],
-  "license": "MIT",
   "author": "",
+  "license": "MIT",
+  "homepage": "https://github.com/unstyled-design/unstyled-design#readme",
   "repository": {
     "type": "git",
     "directory": "packages/unstyled-design",
     "url": "git+https://github.com/unstyled-design/unstyled-design.git"
   },
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "bugs": {
     "url": "https://github.com/unstyled-design/unstyled-design/issues"
   },
-  "homepage": "https://github.com/unstyled-design/unstyled-design#readme"
+  "keywords": [],
+  "main": "./dist/unstyled-design.mjs",
+  "scripts": {
+    "build": "vite build"
+  }
 }

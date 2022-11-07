@@ -1,3 +1,5 @@
 <template>
-  <button>Button</button>
+  <button class="bg-red">
+    Button
+  </button>
 </template>

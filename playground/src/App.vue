@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Button } from 'unstyled-design'
+import Button from 'unstyled-design'
 </script>
 
 <template>
