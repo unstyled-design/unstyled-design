@@ -7,6 +7,8 @@
   "license": "MIT",
   "scripts": {
     "play": "pnpm -C playground run dev",
+    "build": "pnpm -r -F !playground run build",
+    "stub": "pnpm -r --parallel run stub",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "prepare": "husky install"

@@ -28,7 +28,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "vite build"
+    "build": "vite build",
+    "stub": "vite build --watch"
   },
   "dependencies": {
     "@unstyled-design/preset-uno": "workspace:*"
