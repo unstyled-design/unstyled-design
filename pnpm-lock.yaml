@@ -49,6 +49,7 @@ importers:
 
   playground:
     specifiers:
+      '@iconify-json/carbon': ^1.1.9
       '@unocss/reset': ^0.46.3
       '@unstyled-design/preset-uno': workspace:*
       '@vitejs/plugin-vue': ^3.2.0
@@ -64,6 +65,7 @@ importers:
       unstyled-design: link:../packages/unstyled-design
       vue: 3.2.41
     devDependencies:
+      '@iconify-json/carbon': 1.1.9
       '@vitejs/plugin-vue': 3.2.0_vite@3.2.3+vue@3.2.41
       typescript: 4.8.4
       unocss: 0.46.3_vite@3.2.3
@@ -880,6 +882,12 @@ packages:
 
   /@humanwhocodes/object-schema/1.2.1:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
+    dev: true
+
+  /@iconify-json/carbon/1.1.9:
+    resolution: {integrity: sha512-O3geRhhnE9dDDC4oT6qwBs7sdc37R9UqftiG7BP8YVDw8OcXv8i95J0ZEkIfdOXFj1Wb6kC/Uu/6VTlAqotVXg==}
+    dependencies:
+      '@iconify/types': 2.0.0
     dev: true
 
   /@iconify/types/2.0.0:
