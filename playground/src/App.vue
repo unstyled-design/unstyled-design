@@ -6,7 +6,7 @@ import { UnButton, UnIcon, UnLink } from 'unstyled-design'
   <div class="mt-10 space-y-3 text-center">
     <div class="space-x-3">
       <UnButton>Default Button</UnButton>
-      <UnButton icon="i-carbon-asleep-filled">
+      <UnButton icon="i-carbon-data-enrichment">
         Icon Button
       </UnButton>
     </div>
