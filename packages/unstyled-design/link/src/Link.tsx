@@ -1,10 +1,11 @@
-import { defineComponent, h } from 'vue'
+import { defineComponent } from 'vue'
 
 export const UnLink = defineComponent({
   name: 'UnLink',
 
   setup(props, { slots }) {
-    return () => h('a', { class: 'un-link' }, slots.default?.())
+    // eslint-disable-next-line react/no-unknown-property
+    return () => <a class={'un-link'}>{ slots.default?.() }</a>
   }
 })
 

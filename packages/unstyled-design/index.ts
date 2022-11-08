@@ -1,4 +1,5 @@
 import 'uno.css'
 
-export * from './button'
 export * from './link'
+export * from './icon'
+export * from './button'

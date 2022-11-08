@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { UnButton, UnLink } from 'unstyled-design'
+import { UnButton, UnIcon, UnLink } from 'unstyled-design'
 </script>
 
 <template>
@@ -8,4 +8,6 @@ import { UnButton, UnLink } from 'unstyled-design'
   <UnLink target="_blank" href="https://www.hongbusi.com">
     Link
   </UnLink>
+  <br>
+  <UnIcon icon="i-carbon-asleep-filled" />
 </template>
