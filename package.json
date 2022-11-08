@@ -9,6 +9,8 @@
     "play": "pnpm -C playground run dev",
     "build": "pnpm -r -F !playground run build",
     "stub": "pnpm -r --parallel run stub",
+    "docs:dev": "pnpm -C docs run dev",
+    "docs:build": "pnpm -C docs run build",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "prepare": "husky install"
