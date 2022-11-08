@@ -1,14 +1,18 @@
-import { defineComponent } from 'vue'
+import { defineComponent, h } from 'vue'
 
-export default defineComponent({
+export const UnButton = defineComponent({
   name: 'UnButton',
 
-  setup(props, { slots }) {
-    return () => {
-      // eslint-disable-next-line react/no-unknown-property
-      return <button class={'un-button'}>
-        { slots.default ? slots.default() : 'UnButton' }
-      </button>
+  props: {
+    to: {
+      type: String,
+      default: undefined
     }
+  },
+
+  setup(props, { slots }) {
+    return () => h(props.to ? 'a' : 'button', { class: 'un-button', href: props.to }, slots.default?.())
   }
 })
+
+export type UnButtonInstance = InstanceType<typeof UnButton>

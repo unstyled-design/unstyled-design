@@ -4,10 +4,12 @@ export function presetUnstyled(): Preset {
   return {
     name: '@unstyled-design/preset-uno',
 
-    shortcuts: [
-      {
-        'un-button': 'px-2 py-1 text-base text-white bg-blue rounded transition-opacity hover:opacity-90'
-      }
-    ]
+    shortcuts: {
+      // general
+      'un-transition': 'transition-all duration-200',
+
+      // button
+      'un-button': 'inline-block px-0.75em py-0.25em shadow-sm bg-red rounded opacity-80 un-transition hover:opacity-100'
+    }
   }
 }
