@@ -13,6 +13,7 @@
     "lib": ["esnext", "dom"],
     "skipLibCheck": true,
     "paths": {
+      "~/*": ["."],
       "@unstyled-design/preset-uno": ["../preset-uno/index.ts"]
     }
   },
