@@ -7,8 +7,8 @@
   "license": "MIT",
   "scripts": {
     "play": "pnpm -C playground run dev",
-    "build": "pnpm -r -F !playground run build",
-    "stub": "pnpm -r --parallel run stub",
+    "build": "pnpm -r --parallel -F \"./packages/{preset-uno,unstyled-design}\" run build",
+    "stub": "pnpm -r --parallel -F \"./packages/{preset-uno,unstyled-design}\" run stub",
     "docs:dev": "pnpm -C docs run dev",
     "docs:build": "pnpm -C docs run build",
     "lint": "eslint .",
