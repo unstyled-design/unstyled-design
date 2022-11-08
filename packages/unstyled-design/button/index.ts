@@ -1,5 +1,10 @@
-import UnButton from './src/index.vue'
+import type { App } from 'vue'
+import UnButton from './src/Button'
 
-export {
-  UnButton
+export { UnButton }
+
+export default {
+  install(app: App) {
+    app.component(UnButton.name, UnButton)
+  }
 }
