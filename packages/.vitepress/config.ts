@@ -48,7 +48,8 @@ function sidebarComponents() {
         { text: 'Button', link: '/components/button/' },
         { text: 'Icon', link: '/components/icon/' },
         { text: 'Link', link: '/components/link/' },
-        { text: 'Select', link: '/components/select/' }
+        { text: 'Select', link: '/components/select/' },
+        { text: 'Tree', link: '/components/tree/' }
       ]
     }
   ]
