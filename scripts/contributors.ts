@@ -44,7 +44,7 @@ export const components = ['button', 'link', 'icon', 'select']
 
 export async function getComponentContributors() {
   const result = await Promise.all(components.map(async (i) => {
-    return [i, await getContributors(`packages/unstyled-design/${i}`)] as const
+    return [i, await getContributors(`packages/components/${i}`)] as const
   }))
   return Object.fromEntries(result)
 }
