@@ -10,7 +10,7 @@
     "build": "pnpm -r --parallel -F \"./packages/{preset-uno,unstyled-design}\" run build",
     "stub": "pnpm -r --parallel -F \"./packages/{preset-uno,unstyled-design}\" run stub",
     "docs:dev": "pnpm -C packages run dev",
-    "docs:build": "pnpm -C docs run build",
+    "docs:build": "pnpm -C packages run build",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "prepare": "husky install"
