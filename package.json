@@ -32,8 +32,5 @@
   },
   "lint-staged": {
     "*.{vue,js,jsx,ts,tsx,json,md}": "eslint --fix"
-  },
-  "eslintConfig": {
-    "extends": "@hongbusi"
   }
 }

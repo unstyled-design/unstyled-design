@@ -11,7 +11,6 @@ export const UnIcon = defineComponent({
   },
 
   setup(props) {
-    // eslint-disable-next-line react/no-unknown-property, react/prop-types
     return () => <div class={['un-icon', props.icon]}></div>
   }
 })
