@@ -9,8 +9,9 @@
     "play": "pnpm -C playground run dev",
     "build": "pnpm -r --parallel -F \"./packages/{preset-uno,unstyled-design}\" run build",
     "stub": "pnpm -r --parallel -F \"./packages/{preset-uno,unstyled-design}\" run stub",
-    "docs:dev": "pnpm -C packages run dev",
-    "docs:build": "pnpm -C packages run build",
+    "docs:dev": "vitepress dev packages",
+    "docs:build": "vitepress build packages",
+    "docs:serve": "vitepress serve packages",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "prepare": "husky install"
@@ -27,7 +28,9 @@
     "lint-staged": "^13.0.3",
     "typescript": "^4.8.4",
     "unocss": "^0.46.3",
+    "unplugin-vue-components": "^0.22.9",
     "vite": "^3.2.3",
+    "vitepress": "1.0.0-alpha.27",
     "vue": "^3.2.41"
   },
   "lint-staged": {
