@@ -1,5 +1,5 @@
 import { defineComponent, h } from 'vue'
-import { UnIcon } from '~/icon'
+import { UnIcon } from '../icon'
 
 export const UnButton = defineComponent({
   name: 'UnButton',

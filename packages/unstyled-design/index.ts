@@ -1,6 +1,6 @@
 import 'uno.css'
 
-export * from './link'
-export * from './icon'
-export * from './button'
-export * from './select'
+export * from './components/link'
+export * from './components/icon'
+export * from './components/button'
+export * from './components/select'
