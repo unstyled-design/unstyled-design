@@ -40,7 +40,7 @@ export async function getContributors(path: string) {
   }
 }
 
-export const components = ['button', 'link', 'icon', 'select']
+export const components = ['button', 'link', 'icon', 'select', 'tree']
 
 export async function getComponentContributors() {
   const result = await Promise.all(components.map(async (i) => {
