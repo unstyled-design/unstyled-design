@@ -9,7 +9,7 @@
     "play": "pnpm -C playground run dev",
     "build": "pnpm -r --parallel -F \"./packages/{preset-uno,unstyled-design}\" run build",
     "stub": "pnpm -r --parallel -F \"./packages/{preset-uno,unstyled-design}\" run stub",
-    "docs:dev": "pnpm -C docs run dev",
+    "docs:dev": "pnpm -C packages run dev",
     "docs:build": "pnpm -C docs run build",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",

@@ -24,7 +24,7 @@ export default defineConfig({
 function nav() {
   return [
     { text: 'Guide', link: '/guide/what-is-unstyled-design', activeMatch: '/guide/' },
-    { text: 'Components', link: '/components/button', activeMatch: '/components/' }
+    { text: 'Components', link: '/components/button/', activeMatch: '/components/' }
   ]
 }
 
@@ -45,7 +45,10 @@ function sidebarComponents() {
     {
       text: 'Test',
       items: [
-        { text: 'Button', link: '/components/button' }
+        { text: 'Button', link: '/components/button/' },
+        { text: 'Icon', link: '/components/icon/' },
+        { text: 'Link', link: '/components/link/' },
+        { text: 'Select', link: '/components/select/' }
       ]
     }
   ]
