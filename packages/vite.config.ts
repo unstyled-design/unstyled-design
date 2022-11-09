@@ -2,17 +2,24 @@ import { resolve } from 'path'
 import { defineConfig } from 'vite'
 import UnoCSS from 'unocss/vite'
 import Components from 'unplugin-vue-components/vite'
+import { getComponentContributors } from '../scripts/contributors'
 import { Contributors } from './.vitepress/plugins/contributors'
+import { MarkdownTransform } from './.vitepress/plugins/markdownTransform'
 
-export default defineConfig({
-  plugins: [
-    Contributors([1, 2, 3]),
+export default defineConfig(async () => {
+  const contributors = await getComponentContributors()
 
-    UnoCSS(),
-    Components({
-      dirs: resolve(__dirname, '.vitepress/theme/components'),
-      include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
-      dts: './.vitepress/components.d.ts'
-    })
-  ]
+  return {
+    plugins: [
+      MarkdownTransform(),
+      Contributors(contributors),
+
+      UnoCSS(),
+      Components({
+        dirs: resolve(__dirname, '.vitepress/theme/components'),
+        include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
+        dts: './.vitepress/components.d.ts'
+      })
+    ]
+  }
 })
