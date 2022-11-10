@@ -11,9 +11,15 @@ const contributors = computed(() => _contributors[props.component] || [] as Cont
 
 <template>
   <div class="flex flex-wrap gap-4 pt-2">
-    <div v-for="c of contributors" :key="c.hash" class="flex gap-2 items-center">
-      <img :src="`https://gravatar.com/avatar/${c.hash}?d=retro`" class="w-8 h-8 rounded-full">
-      {{ c.name }}
+    <div v-for="c of contributors" :key="c.hash">
+      <Link
+        :href="`https://github.com/${c.name}`"
+        class="flex gap-2 items-center"
+        no-icon
+      >
+        <img :src="`https://gravatar.com/avatar/${c.hash}?d=retro`" class="w-8 h-8 rounded-full">
+        {{ c.name }}
+      </Link>
     </div>
   </div>
 </template>

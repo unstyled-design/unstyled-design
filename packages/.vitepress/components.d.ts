@@ -8,5 +8,6 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     Contributors: typeof import('./theme/components/Contributors.vue')['default']
+    Link: typeof import('./theme/components/Link.vue')['default']
   }
 }
