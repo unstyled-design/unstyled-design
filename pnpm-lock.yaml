@@ -24,6 +24,7 @@ importers:
       typescript: ^4.8.4
       unocss: ^0.46.3
       unplugin-vue-components: ^0.22.9
+      unstyled-design: workspace:*
       vite: ^3.2.3
       vitepress: 1.0.0-alpha.27
       vue: ^3.2.41
@@ -48,15 +49,10 @@ importers:
       typescript: 4.8.4
       unocss: 0.46.3_vite@3.2.3
       unplugin-vue-components: 0.22.9_vue@3.2.41
+      unstyled-design: link:packages/unstyled-design
       vite: 3.2.3_@types+node@18.11.9
       vitepress: 1.0.0-alpha.27_@types+node@18.11.9
       vue: 3.2.41
-
-  docs:
-    specifiers:
-      vitepress: 1.0.0-alpha.27
-    devDependencies:
-      vitepress: 1.0.0-alpha.27
 
   packages/preset-uno:
     specifiers: {}
@@ -5230,33 +5226,6 @@ packages:
       rollup: 2.79.1
     optionalDependencies:
       fsevents: 2.3.2
-    dev: true
-
-  /vitepress/1.0.0-alpha.27:
-    resolution: {integrity: sha512-7/PwlIRZANvB2uyi8oi4oMXuH84g2/pAaoymb+ObBCs60m0oVxKMPO28w7R/svqSnnE+bNDOuLzTCXt7gn513g==}
-    hasBin: true
-    dependencies:
-      '@docsearch/css': 3.3.0
-      '@docsearch/js': 3.3.0
-      '@vitejs/plugin-vue': 3.2.0_vite@3.2.3+vue@3.2.41
-      '@vue/devtools-api': 6.4.5
-      '@vueuse/core': 9.4.0_vue@3.2.41
-      body-scroll-lock: 4.0.0-beta.0
-      shiki: 0.11.1
-      vite: 3.2.3
-      vue: 3.2.41
-    transitivePeerDependencies:
-      - '@algolia/client-search'
-      - '@types/node'
-      - '@types/react'
-      - '@vue/composition-api'
-      - less
-      - react
-      - react-dom
-      - sass
-      - stylus
-      - sugarss
-      - terser
     dev: true
 
   /vitepress/1.0.0-alpha.27_@types+node@18.11.9:
