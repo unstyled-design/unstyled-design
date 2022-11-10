@@ -2,4 +2,8 @@
 
 ## Basic
 
-<basic />
+:::demo This is test demo.
+
+button/demo/basic
+
+:::

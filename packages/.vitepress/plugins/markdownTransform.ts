@@ -12,7 +12,9 @@ ${codes.join('\n')}
 const combineMarkdown = (code: string, headers: string[], footers: string[]) => {
   const frontmatterEnds = code.indexOf('---\n\n')
   const firstSubheader = code.search(/## \w/)
-  const sliceIndex = firstSubheader < 0 ? frontmatterEnds < 0 ? 0 : frontmatterEnds + 5 : firstSubheader
+  const sliceIndex = firstSubheader < 0
+    ? (frontmatterEnds < 0 ? 0 : frontmatterEnds + 5)
+    : firstSubheader
 
   if (headers.length > 0)
     code = code.slice(0, sliceIndex) + headers.join('\n') + code.slice(sliceIndex)
@@ -40,8 +42,7 @@ export function MarkdownTransform(): Plugin {
             `<Contributors component="${name}" />`
           ],
           scriptSetups: [
-            // 'const demos = import.meta.glob(\'./demo/*.vue\')' TODO
-            'import Basic from \'./demo/basic.vue\''
+            'const demos = import.meta.glob(\'./demo/*.vue\', { import: \'default\', eager: true })'
           ]
         }
 

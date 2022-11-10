@@ -1,7 +1,11 @@
+import { mdPlugin } from './plugins/markdown'
 import { defineConfig } from 'vitepress'
-
 export default defineConfig({
+  lang: 'en-US',
   title: 'unstyled-design',
+
+  lastUpdated: true,
+  cleanUrls: 'without-subfolders',
 
   themeConfig: {
     nav: nav(),
@@ -22,6 +26,10 @@ export default defineConfig({
     footer: {
       copyright: 'Copyright © 2022-present Hongbusi'
     }
+  },
+
+  markdown: {
+    config: md => mdPlugin(md)
   }
 })
 
