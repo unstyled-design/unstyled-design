@@ -1,5 +1,5 @@
 import type { Plugin } from 'vite'
-import { components } from '../../../scripts/contributors'
+import components from '../../index.json'
 
 export function MarkdownTransform(): Plugin {
   return {

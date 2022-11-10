@@ -1,5 +1,6 @@
 import md5 from 'md5'
 import Git from 'simple-git'
+import components from '../packages/index.json'
 
 export interface ContributorInfo {
   name: string
@@ -39,8 +40,6 @@ export async function getContributors(path: string) {
     return []
   }
 }
-
-export const components = ['button', 'link', 'icon', 'select', 'tree']
 
 export async function getComponentContributors() {
   const result = await Promise.all(components.map(async (i) => {
