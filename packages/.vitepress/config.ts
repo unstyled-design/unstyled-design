@@ -11,6 +11,10 @@ export default defineConfig({
       '/components/': sidebarComponents()
     },
 
+    editLink: {
+      pattern: 'https://github.com/unstyled-design/unstyled-design/edit/main/packages/:path'
+    },
+
     socialLinks: [
       { icon: 'github', link: 'https://github.com/unstyled-design/unstyled-design' }
     ],
