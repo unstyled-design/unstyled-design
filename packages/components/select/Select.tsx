@@ -1,7 +1,7 @@
 import { defineComponent } from 'vue'
 
-export const UnSelect = defineComponent({
-  name: 'UnSelect',
+export const USelect = defineComponent({
+  name: 'USelect',
 
   props: {
 
@@ -14,4 +14,4 @@ export const UnSelect = defineComponent({
   }
 })
 
-export type UnSelectInstance = InstanceType<typeof UnSelect>
+export type USelectInstance = InstanceType<typeof USelect>

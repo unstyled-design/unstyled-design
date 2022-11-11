@@ -2,7 +2,7 @@
 
 ## Basic
 
-:::demo This is test demo.
+::: demo This is test demo.
 
 button/demo/basic
 

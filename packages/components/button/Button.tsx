@@ -1,8 +1,8 @@
 import { defineComponent, h } from 'vue'
-import { UnIcon } from '../icon'
+import { UIcon } from '../icon'
 
-export const UnButton = defineComponent({
-  name: 'UnButton',
+export const UButton = defineComponent({
+  name: 'UButton',
 
   props: {
     to: {
@@ -17,11 +17,11 @@ export const UnButton = defineComponent({
   },
 
   setup(props, { slots }) {
-    return () => h(props.to ? 'a' : 'button', { class: 'un-button', href: props.to }, [
-      props.icon ? h(UnIcon, { icon: props.icon }) : undefined,
+    return () => h(props.to ? 'a' : 'button', { class: 'u-button', href: props.to }, [
+      props.icon ? h(UIcon, { icon: props.icon }) : undefined,
       slots.default?.()
     ])
   }
 })
 
-export type UnButtonInstance = InstanceType<typeof UnButton>
+export type UButtonInstance = InstanceType<typeof UButton>

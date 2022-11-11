@@ -1,8 +1,8 @@
 <template>
   <div class="space-x-3">
-    <UnButton>Default Button</UnButton>
-    <UnButton icon="i-carbon-data-enrichment">
+    <u-button>Default Button</u-button>
+    <u-button icon="i-carbon-data-enrichment">
       Icon Button
-    </UnButton>
+    </u-button>
   </div>
 </template>

@@ -1,7 +1,7 @@
 import { defineComponent } from 'vue'
 
-export const UnIcon = defineComponent({
-  name: 'UnIcon',
+export const UIcon = defineComponent({
+  name: 'UIcon',
 
   props: {
     icon: {
@@ -11,8 +11,8 @@ export const UnIcon = defineComponent({
   },
 
   setup(props) {
-    return () => <div class={['un-icon', props.icon]}></div>
+    return () => <div class={['u-icon', props.icon]}></div>
   }
 })
 
-export type UnIconInstance = InstanceType<typeof UnIcon>
+export type UIconInstance = InstanceType<typeof UIcon>
