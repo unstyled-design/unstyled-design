@@ -5,9 +5,12 @@ import { UButton, UIcon, ULink } from 'unstyled-design'
 <template>
   <div class="mt-10 space-y-3 text-center">
     <div class="space-x-3">
+      <UButton size="large">
+        Large Button
+      </UButton>
       <UButton>Default Button</UButton>
-      <UButton icon="i-carbon-data-enrichment">
-        Icon Button
+      <UButton size="small">
+        Small Button
       </UButton>
     </div>
 

@@ -10,6 +10,11 @@ export const UButton = defineComponent({
       default: undefined
     },
 
+    size: {
+      type: String,
+      default: 'medium'
+    },
+
     icon: {
       type: String,
       default: undefined
@@ -17,7 +22,15 @@ export const UButton = defineComponent({
   },
 
   setup(props, { slots }) {
-    return () => h(props.to ? 'a' : 'button', { class: 'u-button', href: props.to }, [
+    const allClasses = {
+      large: 'u-button-large',
+      medium: 'u-button-medium',
+      small: 'u-button-small'
+    }
+
+    const sizeClass = allClasses[props.size] || allClasses.medium
+
+    return () => h(props.to ? 'a' : 'button', { class: `u-button u-button-default ${sizeClass}`, href: props.to }, [
       props.icon ? h(UIcon, { icon: props.icon }) : undefined,
       slots.default?.()
     ])
