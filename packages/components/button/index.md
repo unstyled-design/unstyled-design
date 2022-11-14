@@ -2,8 +2,16 @@
 
 ## Basic
 
-::: demo This is test demo.
+::: demo
 
 button/demo/basic
+
+:::
+
+## Size
+
+::: demo
+
+button/demo/size
 
 :::

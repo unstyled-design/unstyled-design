@@ -25,10 +25,15 @@ export function presetUnstyled(): Preset {
       // button
       'u-button': 'inline-block text-center text-base border border-transparent rounded u-transition opacity-80',
       'u-button-default': 'text-black bg-white u-border-base hover:text-primary hover:border-primary hover:opacity-100',
+      'u-button-primary': 'text-white bg-primary hover:opacity-100',
+      'u-button-success': 'text-white bg-success hover:opacity-100',
+      'u-button-warning': 'text-white bg-warning hover:opacity-100',
+      'u-button-info': 'text-white bg-info hover:opacity-100',
+      'u-button-danger': 'text-white bg-danger hover:opacity-100',
       // button size
-      'u-button-large': 'px-5 py-3 text-xl',
-      'u-button-medium': 'px-4 py-2 text-base',
-      'u-button-small': 'px-2 py-1 text-sm',
+      'u-button-large': 'px-3 py-1.5 text-base',
+      'u-button-medium': 'px-2 py-1 text-sm',
+      'u-button-small': 'px-1 py-0.5 text-xs',
 
       // select
       'u-select': ''
