@@ -42,7 +42,7 @@ const decodedDescription = computed(() =>
 
       <div class="flex justify-end items-center p-2">
         <div @click="toggleSourceVisible()">
-          <UnIcon icon="i-carbon-code" />
+          <UIcon icon="i-carbon-code" class="cursor-pointer" />
         </div>
       </div>
 

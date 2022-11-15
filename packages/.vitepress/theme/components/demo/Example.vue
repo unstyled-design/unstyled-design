@@ -5,7 +5,7 @@ defineProps({
     required: true
   },
   demo: {
-    type: Function,
+    type: Object,
     required: true
   }
 })

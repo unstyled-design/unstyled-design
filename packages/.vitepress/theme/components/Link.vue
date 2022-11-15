@@ -19,6 +19,6 @@ const isExternal = computed(() => props.href && /^[a-z]+:/i.test(props.href))
     :rel="isExternal ? 'noopener noreferrer' : undefined"
   >
     <slot />
-    <UnIcon v-if="isExternal && !noIcon" icon="i-carbon-arrow-up-right" class="ml-4" />
+    <UIcon v-if="isExternal && !noIcon" icon="i-carbon-arrow-up-right" class="ml-4" />
   </component>
 </template>

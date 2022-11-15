@@ -1,24 +1,24 @@
 <template>
   <div class="mb-4 space-x-3">
-    <UButton>
+    <u-button>
       Default Button
-    </UButton>
+    </u-button>
   </div>
   <div class="space-x-3">
-    <UButton type="primary">
+    <u-button type="primary">
       Primary Button
-    </UButton>
-    <UButton type="success">
+    </u-button>
+    <u-button type="success">
       success Button
-    </UButton>
-    <UButton type="warning">
+    </u-button>
+    <u-button type="warning">
       Warning Button
-    </UButton>
-    <UButton type="info">
+    </u-button>
+    <u-button type="info">
       Info Button
-    </UButton>
-    <UButton type="danger">
+    </u-button>
+    <u-button type="danger">
       Danger Button
-    </UButton>
+    </u-button>
   </div>
 </template>

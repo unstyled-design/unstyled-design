@@ -15,6 +15,6 @@ const decoded = computed(() => {
 
 <template>
   <div>
-    <div v-html="decoded" />
+    <div class="language-vue" v-html="decoded" />
   </div>
 </template>

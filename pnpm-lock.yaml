@@ -8,6 +8,7 @@ importers:
       '@commitlint/cli': ^17.2.0
       '@commitlint/config-conventional': ^17.2.0
       '@hongbusi/eslint-config': ^0.3.4
+      '@iconify-json/carbon': ^1.1.9
       '@types/fs-extra': ^9.0.13
       '@types/markdown-it': ^12.2.3
       '@types/node': ^18.11.9
@@ -45,6 +46,7 @@ importers:
       '@commitlint/cli': 17.2.0
       '@commitlint/config-conventional': 17.2.0
       '@hongbusi/eslint-config': 0.3.4_wyqvi574yv7oiwfeinomdzmc3m
+      '@iconify-json/carbon': 1.1.9
       '@types/fs-extra': 9.0.13
       '@types/markdown-it': 12.2.3
       '@types/node': 18.11.9
