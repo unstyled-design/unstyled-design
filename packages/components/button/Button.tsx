@@ -1,6 +1,24 @@
 import { defineComponent, h } from 'vue'
 import { UIcon } from '../icon'
 
+type Classes = Record<string, string>
+
+const typeClasses: Classes = {
+  primary: 'u-primary',
+  success: 'u-success',
+  warning: 'u-warning',
+  danger: 'u-danger',
+  info: 'u-info'
+}
+
+const sizeClasses: Classes = {
+  'xs': 'u-xs',
+  'sm': 'u-sm',
+  'base': 'u-base',
+  'xl': 'u-xl',
+  '2xl': 'u-2xl'
+}
+
 export const UButton = defineComponent({
   name: 'UButton',
 
@@ -17,7 +35,22 @@ export const UButton = defineComponent({
 
     size: {
       type: String,
-      default: 'medium'
+      default: 'base'
+    },
+
+    plain: {
+      type: Boolean,
+      default: false
+    },
+
+    dashed: {
+      type: Boolean,
+      default: false
+    },
+
+    round: {
+      type: Boolean,
+      default: false
     },
 
     icon: {
@@ -27,22 +60,16 @@ export const UButton = defineComponent({
   },
 
   setup(props, { slots }) {
-    const allClasses = {
-      default: 'u-button-default',
-      primary: 'u-button-primary',
-      success: 'u-button-success',
-      warning: 'u-button-warning',
-      info: 'u-button-info',
-      danger: 'u-button-danger',
-      large: 'u-button-large',
-      medium: 'u-button-medium',
-      small: 'u-button-small'
-    }
+    const baseClass = 'u-button u-transition hover:u-button-hover active:u-button-active focus-visible:u-focus-base u-disabled:u-disabled'
+    const typeClass = typeClasses[props.type]
+    const sizeClass = sizeClasses[props.size]
+    const plainClass = (props.type === 'default' || props.plain) || 'u-solid'
+    const dashedClass = props.dashed && 'u-dashed'
+    const roundClass = props.round && 'rounded-full'
 
-    const sizeClass = allClasses[props.size] || allClasses.medium
-    const typeClass = allClasses[props.type] || allClasses.default
+    const classes = [baseClass, typeClass, sizeClass, plainClass, dashedClass, roundClass]
 
-    return () => h(props.to ? 'a' : 'button', { class: `u-button ${sizeClass} ${typeClass}`, href: props.to }, [
+    return () => h(props.to ? 'a' : 'button', { class: classes, href: props.to }, [
       props.icon ? h(UIcon, { icon: props.icon }) : undefined,
       slots.default?.()
     ])

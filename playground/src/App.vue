@@ -5,33 +5,41 @@ import { UButton, UIcon, ULink } from 'unstyled-design'
 <template>
   <div class="mt-10 space-y-3 text-center">
     <div class="space-x-3">
+      <UButton size="xs">
+        xs size
+      </UButton>
+      <UButton size="sm">
+        sm size
+      </UButton>
       <UButton>
-        Default Button
+        base size
       </UButton>
-      <UButton type="primary">
-        Primary Button
+      <UButton size="xl">
+        xl size
       </UButton>
-      <UButton type="success">
-        success Button
-      </UButton>
-      <UButton type="warning">
-        Warning Button
-      </UButton>
-      <UButton type="info">
-        Info Button
-      </UButton>
-      <UButton type="danger">
-        Danger Button
+      <UButton size="2xl">
+        2xl size
       </UButton>
     </div>
 
     <div class="space-x-3">
-      <UButton size="large">
-        Large Button
+      <UButton round>
+        Default
       </UButton>
-      <UButton>Default Button</UButton>
-      <UButton size="small">
-        Small Button
+      <UButton type="primary" round>
+        Primary
+      </UButton>
+      <UButton type="success" plain>
+        Success
+      </UButton>
+      <UButton type="warning">
+        Warning
+      </UButton>
+      <UButton type="danger" plain dashed>
+        Danger
+      </UButton>
+      <UButton type="info" dashed>
+        Info
       </UButton>
     </div>
 
