@@ -1,5 +1,6 @@
-import { mdPlugin } from './plugins/markdown'
 import { defineConfig } from 'vitepress'
+import { mdPlugin } from './plugins/markdown'
+
 export default defineConfig({
   lang: 'en-US',
   title: 'unstyled-design',
@@ -58,6 +59,7 @@ function sidebarComponents() {
       text: 'Test',
       items: [
         { text: 'Button', link: '/components/button/' },
+        { text: 'Space', link: '/components/space/' },
         { text: 'Icon', link: '/components/icon/' },
         { text: 'Link', link: '/components/link/' },
         { text: 'Select', link: '/components/select/' },
