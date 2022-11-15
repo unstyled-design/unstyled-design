@@ -14,7 +14,7 @@ const contributors = computed(() => _contributors[props.component] || [] as Cont
     <div v-for="c of contributors" :key="c.hash">
       <Link
         :href="`https://github.com/${c.name}`"
-        class="flex gap-2 items-center"
+        class="flex gap-2 items-center text-[var(--vp-c-text-1)]! hover:text-[var(--vp-c-brand)]!"
         no-icon
       >
         <img :src="`https://gravatar.com/avatar/${c.hash}?d=retro`" class="w-8 h-8 rounded-full">
