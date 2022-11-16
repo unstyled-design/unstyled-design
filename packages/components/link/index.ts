@@ -1,1 +1,1 @@
-export * from './Link'
+export { default as ULink } from './src/Link'

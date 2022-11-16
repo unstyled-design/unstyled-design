@@ -1,1 +1,1 @@
-export * from './Select'
+export { default as USelect } from './src/Select'

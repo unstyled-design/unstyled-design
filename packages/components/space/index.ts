@@ -1,1 +1,1 @@
-export * from './Space'
+export { default as USpace } from './src/Space'

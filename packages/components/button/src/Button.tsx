@@ -1,5 +1,5 @@
 import { defineComponent, h } from 'vue'
-import { UIcon } from '../icon'
+import { UIcon } from '../../icon'
 
 type Classes = Record<string, string>
 
@@ -19,7 +19,7 @@ const sizeClasses: Classes = {
   '2xl': 'u-2xl'
 }
 
-export const UButton = defineComponent({
+export default defineComponent({
   name: 'UButton',
 
   props: {
@@ -75,5 +75,3 @@ export const UButton = defineComponent({
     ])
   }
 })
-
-export type UButtonInstance = InstanceType<typeof UButton>

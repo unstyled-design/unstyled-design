@@ -1,1 +1,1 @@
-export * from './Icon'
+export { default as UIcon } from './src/Icon'
