@@ -1,8 +1,26 @@
 <script setup lang="ts">
-import { UButton, UIcon, ULink } from 'unstyled-design'
+import { UButton, UIcon, ULink, USpace } from 'unstyled-design'
 </script>
 
 <template>
+  <USpace>
+    <UButton size="xs">
+      xs size
+    </UButton>
+    <UButton size="sm">
+      sm size
+    </UButton>
+    <UButton>
+      base size
+    </UButton>
+    <UButton size="xl">
+      xl size
+    </UButton>
+    <UButton size="2xl">
+      2xl size
+    </UButton>
+  </USpace>
+
   <div class="mt-10 space-y-3 text-center">
     <div class="space-x-3">
       <UButton size="xs">

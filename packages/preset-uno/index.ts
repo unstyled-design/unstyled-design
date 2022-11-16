@@ -74,6 +74,9 @@ export function presetUnstyled(): Preset {
       'u-button-hover': 'opacity-100 !border-context text-context',
       'u-button-active': 'u-active-base bg-context/5',
 
+      // space
+      'u-space': 'flex',
+
       // link
       'u-link': 'underline underline-offset-2 underline-black/20 u-transition hover:underline-black/40',
 
