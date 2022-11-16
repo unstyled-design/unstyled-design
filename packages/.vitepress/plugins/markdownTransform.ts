@@ -42,7 +42,7 @@ export function MarkdownTransform(): Plugin {
             `<Contributors component="${name}" />`
           ],
           scriptSetups: [
-            'const demos = import.meta.glob(\'./demo/*.vue\', { import: \'default\', eager: true })'
+            'const demos = import.meta.glob(\'./demos/*.vue\', { import: \'default\', eager: true })'
           ]
         }
 

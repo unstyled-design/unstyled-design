@@ -4,7 +4,7 @@
 
 ::: demo
 
-button/demo/basic
+button/demos/basic
 
 :::
 
@@ -12,6 +12,6 @@ button/demo/basic
 
 ::: demo
 
-button/demo/size
+button/demos/size
 
 :::

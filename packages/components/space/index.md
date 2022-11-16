@@ -4,6 +4,6 @@
 
 ::: demo
 
-space/demo/basic
+space/demos/basic
 
 :::
