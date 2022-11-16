@@ -1,7 +1,3 @@
-<script setup lang="ts">
-import { UButton, UIcon, ULink, USpace } from 'unstyled-design'
-</script>
-
 <template>
   <USpace>
     <UButton size="xs">
