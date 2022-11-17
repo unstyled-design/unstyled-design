@@ -1,11 +1,11 @@
 <template>
-  <div class="space-x-3">
-    <UButton size="large">
+  <u-space>
+    <u-button size="large">
       Large Button
-    </UButton>
-    <UButton>Default Button</UButton>
-    <UButton size="small">
+    </u-button>
+    <u-button>Default Button</u-button>
+    <u-button size="small">
       Small Button
-    </UButton>
-  </div>
+    </u-button>
+  </u-space>
 </template>
