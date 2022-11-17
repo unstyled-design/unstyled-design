@@ -1,7 +1,7 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'UIcon',
+  name: 'Icon',
 
   props: {
     icon: {

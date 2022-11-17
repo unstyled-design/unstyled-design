@@ -6,8 +6,9 @@ export * from '../components'
 
 const unstyled = {
   install: (app: App) => {
-    for (const name in components)
-      app.component(name, components[name])
+    Object.keys(components).forEach((key) => {
+      app.component(key, components[key as keyof typeof components])
+    })
   }
 }
 

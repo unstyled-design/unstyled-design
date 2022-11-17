@@ -23,7 +23,7 @@ export const spaceProps = {
 }
 
 export default defineComponent({
-  name: 'USpace',
+  name: 'Space',
   props: spaceProps,
   setup(props, { slots }) {
     const children = slots.default?.()

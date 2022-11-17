@@ -1,7 +1,7 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'ULink',
+  name: 'Link',
 
   setup(props, { slots }) {
     return () => <a class={'u-link'}>{ slots.default?.() }</a>

@@ -2,6 +2,7 @@
   "extends": "@hongbusi",
   "rules": {
     "react/prop-types": "off",
-    "react/no-unknown-property": "off"
+    "react/no-unknown-property": "off",
+    "vue/no-reserved-component-names": "off"
   }
 }

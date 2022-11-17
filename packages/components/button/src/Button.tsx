@@ -20,7 +20,7 @@ const sizeClasses: Classes = {
 }
 
 export default defineComponent({
-  name: 'UButton',
+  name: 'Button',
 
   props: {
     to: {
