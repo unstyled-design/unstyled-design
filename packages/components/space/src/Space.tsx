@@ -1,14 +1,16 @@
 import type { PropType } from 'vue'
 import { defineComponent } from 'vue'
 
+enum Direction {
+  vertical = 'flex-col',
+  horizontal = 'flex-row'
+}
+
 enum Align {
-  'stretch' = 'items-stretch',
   'baseline' = 'items-baseline',
   'start' = 'items-start',
   'end' = 'items-end',
-  'center' = 'items-center',
-  'flex-end' = 'items-flex-end',
-  'flex-start' = 'items-flex-start'
+  'center' = 'items-center'
 }
 
 enum Size {
@@ -18,7 +20,10 @@ enum Size {
 }
 
 export const spaceProps = {
-  vertical: Boolean,
+  direction: {
+    type: String as PropType<keyof typeof Direction>,
+    default: 'horizontal'
+  },
   align: String as PropType<keyof typeof Align>,
   wrap: {
     type: Boolean,
@@ -34,7 +39,7 @@ export default defineComponent({
   name: 'Space',
   props: spaceProps,
   render() {
-    const { vertical, align, wrap, size, $slots } = this
+    const { direction, align, wrap, size, $slots } = this
     const children = $slots.default?.()
     if (!children?.length)
       return null
@@ -42,7 +47,7 @@ export default defineComponent({
       <div class={[
         'u-space',
         'flex',
-        vertical ? 'flex-col' : 'flex-row',
+        Direction[direction],
         Align[align],
         wrap ? 'flex-wrap' : 'flex-nowrap',
         Size[size]
