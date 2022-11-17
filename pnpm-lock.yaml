@@ -39,6 +39,7 @@ importers:
       unplugin-vue-components: ^0.22.9
       unstyled-design: workspace:*
       vite: ^3.2.3
+      vite-plugin-inspect: ^0.7.8
       vitepress: 1.0.0-alpha.27
       vue: ^3.2.41
     devDependencies:
@@ -77,6 +78,7 @@ importers:
       unplugin-vue-components: 0.22.9_vue@3.2.41
       unstyled-design: link:packages/unstyled-design
       vite: 3.2.3_@types+node@18.11.9
+      vite-plugin-inspect: 0.7.8_vite@3.2.3
       vitepress: 1.0.0-alpha.27_@types+node@18.11.9
       vue: 3.2.41
 
@@ -3876,6 +3878,10 @@ packages:
     resolution: {integrity: sha512-lxpCM3HTvquGxKGzHeknB/sUjuVoUElLlfYnXZT73K8geR9jQbroGlSCFBax9/0mpGoD3kzcMLnOlGQPJJNyqQ==}
     dev: true
 
+  /kolorist/1.6.0:
+    resolution: {integrity: sha512-dLkz37Ab97HWMx9KTes3Tbi3D1ln9fCAy2zr2YVExJasDRPGRaKcoE4fycWNtnCAJfjFqe0cnY+f8KT2JePEXQ==}
+    dev: true
+
   /levn/0.4.1:
     resolution: {integrity: sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==}
     engines: {node: '>= 0.8.0'}
@@ -5433,6 +5439,24 @@ packages:
     dependencies:
       spdx-correct: 3.1.1
       spdx-expression-parse: 3.0.1
+    dev: true
+
+  /vite-plugin-inspect/0.7.8_vite@3.2.3:
+    resolution: {integrity: sha512-LjLcpKOV3CPxCXXZ+jS6H/3xk9c/lcGLnGu9dCj5RU4jCbHg84dqlrS02UekVx9SvZfaitVJZMUHtWtXG4T4JA==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      vite: ^3.1.0
+    dependencies:
+      '@rollup/pluginutils': 5.0.2
+      debug: 4.3.4
+      fs-extra: 10.1.0
+      kolorist: 1.6.0
+      sirv: 2.0.2
+      ufo: 0.8.6
+      vite: 3.2.3_@types+node@18.11.9
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
     dev: true
 
   /vite/3.2.3:

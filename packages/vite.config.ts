@@ -1,6 +1,7 @@
 import { resolve } from 'path'
 import { defineConfig } from 'vite'
 import UnoCSS from 'unocss/vite'
+import Inspect from 'vite-plugin-inspect'
 import Components from 'unplugin-vue-components/vite'
 import { getComponentContributors } from '../scripts/contributors'
 import { Contributors } from './.vitepress/plugins/contributors'
@@ -11,6 +12,8 @@ export default defineConfig(async () => {
 
   return {
     plugins: [
+      Inspect(),
+
       MarkdownTransform(),
       Contributors(contributors),
 
