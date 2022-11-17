@@ -4,6 +4,7 @@ import { mdPlugin } from './plugins/markdown'
 export default defineConfig({
   lang: 'en-US',
   title: 'unstyled-design',
+  description: 'An unstyled Vue3 component library.',
 
   lastUpdated: true,
   cleanUrls: 'without-subfolders',

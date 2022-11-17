@@ -2,7 +2,7 @@
   "name": "unstyled-design",
   "type": "module",
   "version": "0.0.1",
-  "description": "",
+  "description": "An unstyled Vue3 component library.",
   "author": "",
   "license": "MIT",
   "homepage": "https://github.com/unstyled-design/unstyled-design#readme",
