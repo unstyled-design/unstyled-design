@@ -48,7 +48,7 @@ export default defineComponent({
         'u-space',
         'flex',
         Direction[direction],
-        Align[align],
+        align ? Align[align] : '',
         wrap ? 'flex-wrap' : 'flex-nowrap',
         Size[size]
       ]}>
