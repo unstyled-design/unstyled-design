@@ -1,23 +1,31 @@
 import type { PropType } from 'vue'
 import { defineComponent } from 'vue'
 
-type Align = 'stretch' | 'baseline' | 'start' | 'end' | 'center' | 'flex-end' | 'flex-start'
+enum Align {
+  'stretch' = 'items-stretch',
+  'baseline' = 'items-baseline',
+  'start' = 'items-start',
+  'end' = 'items-end',
+  'center' = 'items-center',
+  'flex-end' = 'items-flex-end',
+  'flex-start' = 'items-flex-start'
+}
+
+enum Size {
+  small = 'gap-2',
+  medium = 'gap-4',
+  large = 'gap-6'
+}
 
 export const spaceProps = {
+  vertical: Boolean,
+  align: String as PropType<keyof typeof Align>,
   wrap: {
     type: Boolean,
     default: true
   },
-  direction: {
-    type: String,
-    default: 'horizontal'
-  },
-  align: {
-    type: String as PropType<Align>,
-    default: undefined
-  },
   size: {
-    type: String as PropType<'small' | 'medium' | 'large'>,
+    type: String as PropType<keyof typeof Size>,
     default: 'medium'
   }
 }
@@ -25,18 +33,20 @@ export const spaceProps = {
 export default defineComponent({
   name: 'Space',
   props: spaceProps,
-  setup(props, { slots }) {
-    const children = slots.default?.()
-    return {
-      children
-    }
-  },
   render() {
-    const { children } = this
+    const { vertical, align, wrap, size, $slots } = this
+    const children = $slots.default?.()
     if (!children?.length)
       return null
     return (
-      <div class={'u-space'}>
+      <div class={[
+        'u-space',
+        'flex',
+        vertical ? 'flex-col' : 'flex-row',
+        Align[align],
+        wrap ? 'flex-wrap' : 'flex-nowrap',
+        Size[size]
+      ]}>
         { children }
       </div>
     )
