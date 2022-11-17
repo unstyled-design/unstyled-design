@@ -52,7 +52,9 @@ export default defineComponent({
         wrap ? 'flex-wrap' : 'flex-nowrap',
         Size[size]
       ]}>
-        { children }
+        { children.map((child, index) => (
+          <div class={'max-w-full'} key={index}>{ child }</div>
+        ))}
       </div>
     )
   }
