@@ -1,5 +1,5 @@
 <template>
-  <u-space>
+  <u-space vertical>
     <u-button>Button</u-button>
     <u-button>Button</u-button>
     <u-button>Button</u-button>
