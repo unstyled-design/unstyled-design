@@ -1,77 +1,60 @@
+import type { PropType } from 'vue'
 import { defineComponent, h } from 'vue'
 import { UIcon } from '../../icon'
 
-type Classes = Record<string, string>
-
-const typeClasses: Classes = {
-  primary: 'u-primary',
-  success: 'u-success',
-  warning: 'u-warning',
-  danger: 'u-danger',
-  info: 'u-info'
+enum Type {
+  primary = 'u-primary',
+  success = 'u-success',
+  warning = 'u-warning',
+  danger = 'u-danger',
+  info = 'u-info'
 }
 
-const sizeClasses: Classes = {
-  'xs': 'u-xs',
-  'sm': 'u-sm',
-  'base': 'u-base',
-  'xl': 'u-xl',
-  '2xl': 'u-2xl'
+enum Size {
+  'small' = 'u-sm',
+  'medium' = 'u-base',
+  'large' = 'u-xl'
+}
+
+const buttonProps = {
+  to: String,
+  type: String as PropType<keyof typeof Type>,
+  size: {
+    type: String as PropType<keyof typeof Size>,
+    default: 'medium'
+  },
+  plain: Boolean,
+  dashed: Boolean,
+  round: Boolean,
+  icon: String
 }
 
 export default defineComponent({
   name: 'Button',
 
-  props: {
-    to: {
-      type: String,
-      default: undefined
-    },
+  props: buttonProps,
 
-    type: {
-      type: String,
-      default: 'default'
-    },
-
-    size: {
-      type: String,
-      default: 'base'
-    },
-
-    plain: {
-      type: Boolean,
-      default: false
-    },
-
-    dashed: {
-      type: Boolean,
-      default: false
-    },
-
-    round: {
-      type: Boolean,
-      default: false
-    },
-
-    icon: {
-      type: String,
-      default: undefined
-    }
-  },
-
-  setup(props, { slots }) {
-    const baseClass = 'u-button u-transition hover:u-button-hover active:u-button-active focus-visible:u-focus-base u-disabled:u-disabled'
-    const typeClass = typeClasses[props.type]
-    const sizeClass = sizeClasses[props.size]
-    const plainClass = (props.type === 'default' || props.plain) || 'u-solid'
-    const dashedClass = props.dashed && 'u-dashed'
-    const roundClass = props.round && 'rounded-full'
-
-    const classes = [baseClass, typeClass, sizeClass, plainClass, dashedClass, roundClass]
-
-    return () => h(props.to ? 'a' : 'button', { class: classes, href: props.to }, [
-      props.icon ? h(UIcon, { icon: props.icon }) : undefined,
-      slots.default?.()
-    ])
+  render() {
+    const { to, type, size, plain, dashed, round, icon, $slots } = this
+    return (
+      h(
+        to ? 'a' : 'button',
+        {
+          class: [
+            'u-button u-transition hover:u-button-hover active:u-button-active focus-visible:u-focus-base u-disabled:u-disabled',
+            type ? Type[type] : '',
+            Size[size],
+            (type || plain) ? 'u-solid' : '',
+            dashed ? 'u-dashed' : '',
+            round ? 'rounded-full' : ''
+          ],
+          href: to
+        },
+        [
+          icon ? h(UIcon, { icon }) : undefined,
+          $slots.default?.()
+        ]
+      )
+    )
   }
 })

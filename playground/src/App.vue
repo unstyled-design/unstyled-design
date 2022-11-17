@@ -1,71 +1,24 @@
 <template>
-  <USpace>
-    <UButton size="xs">
-      xs size
-    </UButton>
-    <UButton size="sm">
-      sm size
-    </UButton>
-    <UButton>
-      base size
-    </UButton>
-    <UButton size="xl">
-      xl size
-    </UButton>
-    <UButton size="2xl">
-      2xl size
-    </UButton>
-  </USpace>
-
-  <div class="mt-10 space-y-3 text-center">
-    <div class="space-x-3">
-      <UButton size="xs">
-        xs size
-      </UButton>
-      <UButton size="sm">
-        sm size
-      </UButton>
-      <UButton>
-        base size
-      </UButton>
-      <UButton size="xl">
-        xl size
-      </UButton>
-      <UButton size="2xl">
-        2xl size
-      </UButton>
-    </div>
-
-    <div class="space-x-3">
-      <UButton round>
-        Default
-      </UButton>
-      <UButton type="primary" round>
-        Primary
-      </UButton>
-      <UButton type="success" plain>
-        Success
-      </UButton>
-      <UButton type="warning">
-        Warning
-      </UButton>
-      <UButton type="danger" plain dashed>
-        Danger
-      </UButton>
-      <UButton type="info" dashed>
-        Info
-      </UButton>
-    </div>
-
-    <div class="space-x-3">
-      <ULink target="_blank" href="https://www.hongbusi.com">
-        Link
-      </ULink>
-    </div>
-
-    <div class="space-x-3">
-      <UIcon icon="i-carbon-sU" />
-      <UIcon icon="i-carbon-moon" />
-    </div>
-  </div>
+  <u-space direction="vertical" class="my-10">
+    <u-space justify="center">
+      <u-button>
+        Default Button
+      </u-button>
+      <u-button type="primary">
+        Primary Button
+      </u-button>
+      <u-button type="success">
+        success Button
+      </u-button>
+      <u-button type="warning">
+        Warning Button
+      </u-button>
+      <u-button type="info">
+        Info Button
+      </u-button>
+      <u-button type="danger">
+        Danger Button
+      </u-button>
+    </u-space>
+  </u-space>
 </template>

@@ -13,6 +13,15 @@ enum Align {
   'center' = 'items-center'
 }
 
+enum Justify {
+  'start' = 'justify-start',
+  'end' = 'justify-end',
+  'center' = 'justify-center',
+  'around' = 'justify-around',
+  'between' = 'justify-between',
+  'evenly' = 'justify-evenly'
+}
+
 enum Size {
   small = 'gap-2',
   medium = 'gap-4',
@@ -25,6 +34,7 @@ export const spaceProps = {
     default: 'horizontal'
   },
   align: String as PropType<keyof typeof Align>,
+  justify: String as PropType<keyof typeof Justify>,
   wrap: {
     type: Boolean,
     default: true
@@ -39,7 +49,7 @@ export default defineComponent({
   name: 'Space',
   props: spaceProps,
   render() {
-    const { direction, align, wrap, size, $slots } = this
+    const { direction, align, justify, wrap, size, $slots } = this
     const children = $slots.default?.()
     if (!children?.length)
       return null
@@ -49,6 +59,7 @@ export default defineComponent({
         'flex',
         Direction[direction],
         align ? Align[align] : '',
+        justify ? Justify[justify] : '',
         wrap ? 'flex-wrap' : 'flex-nowrap',
         Size[size]
       ]}>
