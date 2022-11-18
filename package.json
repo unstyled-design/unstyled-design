@@ -13,6 +13,7 @@
     "docs:build": "nr update && vitepress build packages",
     "docs:serve": "vitepress serve packages",
     "update": "tsx ./scripts/update.ts",
+    "release": "bumpp package.json packages/**/package.json",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "prepare": "husky install"
@@ -32,6 +33,7 @@
     "@vitejs/plugin-vue": "^3.2.0",
     "@vitejs/plugin-vue-jsx": "^2.1.1",
     "@vueuse/core": "^9.5.0",
+    "bumpp": "^8.2.1",
     "chalk": "^4.1.2",
     "consola": "^2.15.3",
     "escape-html": "^1.0.3",

@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { version } from '../../package.json'
 import { mdPlugin } from './plugins/markdown'
 
 export default defineConfig({
@@ -38,7 +39,13 @@ export default defineConfig({
 function nav() {
   return [
     { text: 'Guide', link: '/guide/what-is-unstyled-design', activeMatch: '/guide/' },
-    { text: 'Components', link: '/components/button/', activeMatch: '/components/' }
+    { text: 'Components', link: '/components/button/', activeMatch: '/components/' },
+    {
+      text: `v${version}`,
+      items: [
+        { text: 'Release Notes', link: 'https://github.com/unstyled-design/unstyled-design/releases' }
+      ]
+    }
   ]
 }
 
