@@ -12,6 +12,7 @@ dist
 dist-ssr
 *.local
 index.json
+packages/unstyled-design/README.md
 
 # Editor directories and files
 .vscode/*

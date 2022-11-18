@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "play": "pnpm -C playground run dev",
-    "build": "pnpm -r --parallel -F \"./packages/{preset-uno,unstyled-design}\" run build",
+    "build": "tsx ./scripts/copy-files.ts && pnpm -r --parallel -F \"./packages/{preset-uno,unstyled-design}\" run build",
     "stub": "pnpm -r --parallel -F \"./packages/{preset-uno,unstyled-design}\" run stub",
     "docs:dev": "nr update && vitepress dev packages",
     "docs:build": "nr update && vitepress build packages",
