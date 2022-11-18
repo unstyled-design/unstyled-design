@@ -7,11 +7,12 @@
   "license": "MIT",
   "scripts": {
     "play": "pnpm -C playground run dev",
-    "build": "tsx ./scripts/copy-files.ts && pnpm -r --parallel -F \"./packages/{preset-uno,unstyled-design}\" run build",
+    "build": "pnpm -r --parallel -F \"./packages/{preset-uno,unstyled-design}\" run build",
     "stub": "pnpm -r --parallel -F \"./packages/{preset-uno,unstyled-design}\" run stub",
     "docs:dev": "nr update && vitepress dev packages",
     "docs:build": "nr update && vitepress build packages",
     "docs:serve": "vitepress serve packages",
+    "copy": "tsx ./scripts/copy-files.ts",
     "update": "tsx ./scripts/update.ts",
     "release": "bumpp package.json packages/**/package.json",
     "lint": "eslint .",
