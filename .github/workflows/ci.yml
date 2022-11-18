@@ -24,11 +24,11 @@ jobs:
           node-version: 16.x
           cache: pnpm
 
-      - name: Install
-        run: nci
+      - name: Install Dependencies
+        run: pnpm i --frozen-lockfile
 
       - name: Lint
-        run: nr lint
+        run: pnpm run lint
 
       - name: Build
-        run: nr build
+        run: pnpm run build
