@@ -64,14 +64,16 @@ function sidebarGuide() {
 function sidebarComponents() {
   return [
     {
-      text: 'Test',
+      text: 'Basic',
       items: [
         { text: 'Button', link: '/components/button/' },
-        { text: 'Space', link: '/components/space/' },
-        { text: 'Icon', link: '/components/icon/' },
-        { text: 'Link', link: '/components/link/' },
-        { text: 'Select', link: '/components/select/' },
-        { text: 'Tree', link: '/components/tree/' }
+        { text: 'Space', link: '/components/space/' }
+      ]
+    },
+    {
+      text: 'Form',
+      items: [
+        { text: 'Radio', link: '/components/radio/' }
       ]
     }
   ]
