@@ -67,6 +67,7 @@ function sidebarComponents() {
       text: 'Basic',
       items: [
         { text: 'Button', link: '/components/button/' },
+        { text: 'Link', link: '/components/link/' },
         { text: 'Space', link: '/components/space/' }
       ]
     },
