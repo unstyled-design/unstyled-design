@@ -68,6 +68,7 @@ function sidebarComponents() {
       items: [
         { text: 'Button', link: '/components/button/' },
         { text: 'Link', link: '/components/link/' },
+        { text: 'Icon', link: '/components/icon/' },
         { text: 'Space', link: '/components/space/' }
       ]
     },
