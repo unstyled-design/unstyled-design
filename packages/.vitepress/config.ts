@@ -10,7 +10,13 @@ export default defineConfig({
   lastUpdated: true,
   cleanUrls: 'without-subfolders',
 
+  head: [
+    ['link', { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' }]
+  ],
+
   themeConfig: {
+    logo: '/logo.svg',
+
     nav: nav(),
 
     sidebar: {
