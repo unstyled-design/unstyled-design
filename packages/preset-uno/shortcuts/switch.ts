@@ -1,4 +1,5 @@
 export const switchShortcuts: Record<string, string> = {
+  'u-switch': 'inline-flex',
   'u-switch-input': 'hidden',
   'u-switch-action': 'relative inline-block w-3.5em h-2em bg-#ccc u-transition ease-in-out rounded-full after:u-switch-action-after',
   'u-switch-action-active': 'after:w-3em',
