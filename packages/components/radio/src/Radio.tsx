@@ -17,16 +17,14 @@ export default defineComponent({
     return () => (
       <label class="u-radio u-disabled:u-disabled" disabled={props.disabled || undefined}>
         <input
-          class="u-radio-input"
+          class="u-radio-input peer"
           type="radio"
           value={props.value}
           disabled={props.disabled}
           checked={isChecked.value}
           onChange={(event: Event) => emit('update:modelValue', (event.target as HTMLInputElement).value)}
         />
-        <span class={['u-radio-outer u-transition', isChecked.value && 'u-radio-outer-checked']}>
-          <span class={['u-radio-inner u-transition', isChecked.value && 'u-radio-inner-checked']} />
-        </span>
+        <span class="u-radio-action peer-checked:u-radio-action-checked" />
         <span>{slots.default ? slots.default() : props.label}</span>
       </label>
     )
