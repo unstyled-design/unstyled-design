@@ -81,6 +81,7 @@ function sidebarComponents() {
     {
       text: 'Form',
       items: [
+        { text: 'Switch', link: '/components/switch/' },
         { text: 'Radio', link: '/components/radio/' }
       ]
     }
