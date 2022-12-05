@@ -15,3 +15,11 @@ switch/demos/basic
 switch/demos/size
 
 :::
+
+## Disabled
+
+::: demo
+
+switch/demos/disabled
+
+:::

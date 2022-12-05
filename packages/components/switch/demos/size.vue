@@ -6,8 +6,8 @@ const value = ref(true)
 
 <template>
   <u-space>
-    <u-switch v-model="value" class="text-xs" />
+    <u-switch v-model="value" size="small" />
     <u-switch v-model="value" />
-    <u-switch v-model="value" class="text-xl" />
+    <u-switch v-model="value" size="large" />
   </u-space>
 </template>

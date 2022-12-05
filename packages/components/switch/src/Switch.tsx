@@ -1,7 +1,18 @@
+import type { PropType } from 'vue'
 import { defineComponent } from 'vue'
+
+enum Size {
+  'small' = 'u-sm',
+  'medium' = 'u-base',
+  'large' = 'u-xl'
+}
 
 export const spaceProps = {
   modelValue: Boolean,
+  size: {
+    type: String as PropType<keyof typeof Size>,
+    default: 'medium'
+  },
   disabled: Boolean
 }
 
@@ -11,7 +22,7 @@ export default defineComponent({
   emits: ['update:modelValue'],
   setup(props, { emit }) {
     return () => (
-      <label class="u-switch">
+      <label class={['u-switch u-disabled:u-disabled', Size[props.size]]} disabled={props.disabled || undefined}>
         <input
           class="u-switch-input peer"
           type="checkbox"
