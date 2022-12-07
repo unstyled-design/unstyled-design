@@ -1,5 +1,5 @@
 import type { PropType } from 'vue'
-import { defineComponent } from 'vue'
+import { Comment, defineComponent } from 'vue'
 
 enum Direction {
   vertical = 'flex-col',
@@ -50,9 +50,10 @@ export default defineComponent({
   props: spaceProps,
   render() {
     const { direction, align, justify, wrap, size, $slots } = this
-    const children = $slots.default?.()
-    if (!children?.length)
+    const _children = $slots.default?.()
+    if (!_children?.length)
       return null
+    const children = _children.filter(node => node.type !== Comment)
     return (
       <div class={[
         'u-space',
