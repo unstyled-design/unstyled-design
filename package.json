@@ -30,7 +30,7 @@
     "@types/node": "^18.11.9",
     "@unocss/core": "^0.46.5",
     "@unocss/preset-mini": "^0.46.5",
-    "@unocss/preset-uno": "^0.46.5",
+    "@unocss/preset-uno": "^0.47.0",
     "@vitejs/plugin-vue": "^3.2.0",
     "@vitejs/plugin-vue-jsx": "^2.1.1",
     "@vueuse/core": "^9.5.0",
