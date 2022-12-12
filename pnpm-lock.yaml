@@ -24,7 +24,7 @@ importers:
       escape-html: ^1.0.3
       eslint: ^8.26.0
       fast-glob: ^3.2.12
-      fs-extra: ^10.1.0
+      fs-extra: ^11.0.0
       husky: ^8.0.1
       lint-staged: ^13.0.3
       markdown-it: ^13.0.1
@@ -64,7 +64,7 @@ importers:
       escape-html: 1.0.3
       eslint: 8.26.0
       fast-glob: 3.2.12
-      fs-extra: 10.1.0
+      fs-extra: 11.1.0
       husky: 8.0.1
       lint-staged: 13.0.3
       markdown-it: 13.0.1
@@ -1640,7 +1640,7 @@ packages:
       vite: ^3.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 3.2.3_@types+node@18.11.9
+      vite: 3.2.3
       vue: 3.2.41
     dev: true
 
@@ -3314,6 +3314,15 @@ packages:
   /fs-extra/10.1.0:
     resolution: {integrity: sha512-oRXApq54ETRj4eMiFzGnHWGy+zo5raudjuxN0b8H7s/RU2oW0Wvsx9O0ACRN/kRq9E8Vu/ReskGB5o3ji+FzHQ==}
     engines: {node: '>=12'}
+    dependencies:
+      graceful-fs: 4.2.10
+      jsonfile: 6.1.0
+      universalify: 2.0.0
+    dev: true
+
+  /fs-extra/11.1.0:
+    resolution: {integrity: sha512-0rcTq621PD5jM/e0a3EJoGC/1TC5ZBCERW82LQuwfGnCa1V8w7dpYH1yNu+SLb6E5dkeCBzKEyLGlFrnr+dUyw==}
+    engines: {node: '>=14.14'}
     dependencies:
       graceful-fs: 4.2.10
       jsonfile: 6.1.0
