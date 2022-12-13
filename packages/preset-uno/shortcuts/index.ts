@@ -5,6 +5,7 @@ import { buttonShortcuts } from './button'
 import { linkShortcuts } from './link'
 import { radioShortcuts } from './radio'
 import { switchShortcuts } from './switch'
+import { selectShortcuts } from './select'
 
 export default [
   // common
@@ -16,5 +17,6 @@ export default [
 
   // form
   radioShortcuts,
-  switchShortcuts
+  switchShortcuts,
+  selectShortcuts
 ] as UserShortcuts
