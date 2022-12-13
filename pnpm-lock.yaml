@@ -37,6 +37,7 @@ importers:
       tsx: ^3.11.0
       typescript: ^4.8.4
       unocss: ^0.46.5
+      unocss-preset-hbs: ^0.0.3
       unplugin-vue-components: ^0.22.9
       unstyled-design: workspace:*
       vite: ^3.2.3
@@ -77,6 +78,7 @@ importers:
       tsx: 3.11.0
       typescript: 4.8.4
       unocss: 0.46.5_vite@3.2.3
+      unocss-preset-hbs: 0.0.3
       unplugin-vue-components: 0.22.9_vue@3.2.41
       unstyled-design: link:packages/unstyled-design
       vite: 3.2.3_@types+node@18.11.9
@@ -1640,7 +1642,7 @@ packages:
       vite: ^3.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 3.2.3
+      vite: 3.2.3_@types+node@18.11.9
       vue: 3.2.41
     dev: true
 
@@ -5377,6 +5379,10 @@ packages:
   /universalify/2.0.0:
     resolution: {integrity: sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==}
     engines: {node: '>= 10.0.0'}
+    dev: true
+
+  /unocss-preset-hbs/0.0.3:
+    resolution: {integrity: sha512-C1+COIlF7N0x0UskQ89pZkKrbssJEdCA3CiLVz06Z2APUXFfGPi67z7zD24oLq2Dv5qIZbpiIXC3u1Oylw4EZQ==}
     dev: true
 
   /unocss/0.46.3_vite@3.2.3:
