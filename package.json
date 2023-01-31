@@ -20,7 +20,7 @@
     "prepare": "husky install"
   },
   "devDependencies": {
-    "@antfu/ni": "^0.18.5",
+    "@antfu/ni": "^0.19.0",
     "@commitlint/cli": "^17.2.0",
     "@commitlint/config-conventional": "^17.2.0",
     "@hongbusi/eslint-config": "^0.3.4",
@@ -28,9 +28,9 @@
     "@types/fs-extra": "^9.0.13",
     "@types/markdown-it": "^12.2.3",
     "@types/node": "^18.11.9",
-    "@unocss/core": "^0.48.0",
-    "@unocss/preset-mini": "^0.48.0",
-    "@unocss/preset-uno": "^0.48.0",
+    "@unocss/core": "^0.49.0",
+    "@unocss/preset-mini": "^0.49.0",
+    "@unocss/preset-uno": "^0.49.0",
     "@vitejs/plugin-vue": "^3.2.0",
     "@vitejs/plugin-vue-jsx": "^2.1.1",
     "@vueuse/core": "^9.5.0",
@@ -52,13 +52,13 @@
     "simple-git": "^3.14.1",
     "tsx": "^3.11.0",
     "typescript": "^4.8.4",
-    "unocss": "^0.48.0",
+    "unocss": "^0.49.0",
     "unocss-preset-hbs": "^0.0.3",
-    "unplugin-vue-components": "^0.22.9",
+    "unplugin-vue-components": "^0.23.0",
     "unstyled-design": "workspace:*",
     "vite": "^3.2.3",
     "vite-plugin-inspect": "^0.7.9",
-    "vitepress": "1.0.0-alpha.35",
+    "vitepress": "1.0.0-alpha.45",
     "vue": "^3.2.41"
   },
   "lint-staged": {
