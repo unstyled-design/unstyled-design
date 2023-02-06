@@ -32,7 +32,7 @@
     "@unocss/preset-mini": "^0.49.0",
     "@unocss/preset-uno": "^0.49.0",
     "@vitejs/plugin-vue": "^3.2.0",
-    "@vitejs/plugin-vue-jsx": "^2.1.1",
+    "@vitejs/plugin-vue-jsx": "^3.0.0",
     "@vueuse/core": "^9.5.0",
     "bumpp": "^8.2.1",
     "chalk": "^4.1.2",
