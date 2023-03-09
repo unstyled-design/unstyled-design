@@ -4,8 +4,8 @@ import { computed } from 'vue'
 const props = defineProps({
   source: {
     type: String,
-    required: true
-  }
+    required: true,
+  },
 })
 
 const decoded = computed(() => {

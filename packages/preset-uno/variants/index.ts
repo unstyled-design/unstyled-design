@@ -7,7 +7,7 @@ export default [
     if (input.startsWith(prefix)) {
       return {
         matcher: input.slice(prefix.length),
-        selector: input => `[disabled] ${input}, ${input}[disabled]`
+        selector: input => `[disabled] ${input}, ${input}[disabled]`,
       }
     }
   },
@@ -16,8 +16,8 @@ export default [
     if (input.startsWith(prefix)) {
       return {
         matcher: input.slice(prefix.length),
-        selector: input => `[checked] ${input}, ${input}[checked]`
+        selector: input => `[checked] ${input}, ${input}[checked]`,
       }
     }
-  }
+  },
 ] as Variant<Theme>[]

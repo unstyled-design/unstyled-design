@@ -6,11 +6,11 @@ export default defineComponent({
   props: {
     icon: {
       type: String,
-      required: true
-    }
+      required: true,
+    },
   },
 
   setup(props) {
     return () => <div class={['u-icon', props.icon]}></div>
-  }
+  },
 })

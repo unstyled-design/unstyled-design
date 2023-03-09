@@ -1,5 +1,5 @@
 import { defineConfig, presetIcons, presetUno } from 'unocss'
-import { presetHbs } from 'unocss-preset-hbs'
+import presetHbs from 'unocss-preset-hbs'
 import { presetUnstyled } from '@unstyled-design/preset-uno'
 
 export default defineConfig({
@@ -12,8 +12,8 @@ export default defineConfig({
         'display': 'inline-block',
         'height': '1.2em',
         'width': '1.2em',
-        'vertical-align': 'text-bottom'
-      }
-    })
-  ]
+        'vertical-align': 'text-bottom',
+      },
+    }),
+  ],
 })

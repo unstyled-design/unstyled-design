@@ -27,7 +27,7 @@ const formatPathDemos = computed(() => {
 const demosKey = computed(() => props.path.slice(props.path.search('/') + 1))
 
 const decodedDescription = computed(() =>
-  decodeURIComponent(props.description!)
+  decodeURIComponent(props.description!),
 )
 </script>
 

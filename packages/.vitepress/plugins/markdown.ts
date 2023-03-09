@@ -1,5 +1,5 @@
-import { resolve } from 'path'
-import fs from 'fs'
+import { resolve } from 'node:path'
+import fs from 'node:fs'
 import MarkdownIt from 'markdown-it'
 import mdContainer from 'markdown-it-container'
 import type Token from 'markdown-it/lib/token'
@@ -31,7 +31,7 @@ export const mdPlugin = (md: MarkdownIt) => {
     render(tokens, idx) {
       const m = tokens[idx].info.trim().match(/^demo\s*(.*)$/)
       if (tokens[idx].nesting === 1 /* means the tag is opening */) {
-        const description = m && m.length > 1 ? m[1] : ''
+        const description = (m && m.length > 1) ? m[1] : ''
         const sourceFileToken = tokens[idx + 2]
         let source = ''
         const sourceFile = sourceFileToken.children?.[0].content ?? ''
@@ -50,6 +50,6 @@ export const mdPlugin = (md: MarkdownIt) => {
       else {
         return '</Demo>'
       }
-    }
+    },
   } as ContainerOpts)
 }

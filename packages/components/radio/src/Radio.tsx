@@ -4,7 +4,7 @@ export const spaceProps = {
   modelValue: String,
   label: String,
   value: String,
-  disabled: Boolean
+  disabled: Boolean,
 }
 
 export default defineComponent({
@@ -28,5 +28,5 @@ export default defineComponent({
         <span>{slots.default ? slots.default() : props.label}</span>
       </label>
     )
-  }
+  },
 })

@@ -2,12 +2,12 @@
 defineProps({
   file: {
     type: String,
-    required: true
+    required: true,
   },
   demo: {
     type: Object,
-    required: true
-  }
+    required: true,
+  },
 })
 </script>
 

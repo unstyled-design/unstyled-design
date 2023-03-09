@@ -43,8 +43,8 @@ export const highlight = (str: string, lang: string) => {
     catch {
       consola.warn(
         chalk.yellow(
-          `[vitepress] Syntax highlight for language "${lang}" is not supported.`
-        )
+          `[vitepress] Syntax highlight for language "${lang}" is not supported.`,
+        ),
       )
     }
   }

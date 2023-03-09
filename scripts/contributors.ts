@@ -9,7 +9,7 @@ export interface ContributorInfo {
 }
 
 const git = Git({
-  maxConcurrentProcesses: 200
+  maxConcurrentProcesses: 200,
 })
 
 export async function getContributors(path: string) {
@@ -27,7 +27,7 @@ export async function getContributors(path: string) {
           map[i[1]] = {
             name: i[0],
             count: 0,
-            hash: md5(i[1])
+            hash: md5(i[1]),
           }
         }
         map[i[1]].count++

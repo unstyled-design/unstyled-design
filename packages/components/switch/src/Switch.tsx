@@ -4,16 +4,16 @@ import { defineComponent } from 'vue'
 enum Size {
   'small' = 'u-sm',
   'medium' = 'u-base',
-  'large' = 'u-xl'
+  'large' = 'u-xl',
 }
 
 export const spaceProps = {
   modelValue: Boolean,
   size: {
     type: String as PropType<keyof typeof Size>,
-    default: 'medium'
+    default: 'medium',
   },
-  disabled: Boolean
+  disabled: Boolean,
 }
 
 export default defineComponent({
@@ -32,5 +32,5 @@ export default defineComponent({
         <span class="u-switch-action peer-checked:u-switch-action-checked peer-active:u-switch-action-active peer-checked:peer-active:u-switch-action-active-checked" />
       </label>
     )
-  }
+  },
 })

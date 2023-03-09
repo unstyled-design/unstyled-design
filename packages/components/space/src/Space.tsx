@@ -3,14 +3,14 @@ import { Comment, defineComponent } from 'vue'
 
 enum Direction {
   vertical = 'flex-col',
-  horizontal = 'flex-row'
+  horizontal = 'flex-row',
 }
 
 enum Align {
   'baseline' = 'items-baseline',
   'start' = 'items-start',
   'end' = 'items-end',
-  'center' = 'items-center'
+  'center' = 'items-center',
 }
 
 enum Justify {
@@ -19,30 +19,30 @@ enum Justify {
   'center' = 'justify-center',
   'around' = 'justify-around',
   'between' = 'justify-between',
-  'evenly' = 'justify-evenly'
+  'evenly' = 'justify-evenly',
 }
 
 enum Size {
   small = 'gap-2',
   medium = 'gap-4',
-  large = 'gap-6'
+  large = 'gap-6',
 }
 
 export const spaceProps = {
   direction: {
     type: String as PropType<keyof typeof Direction>,
-    default: 'horizontal'
+    default: 'horizontal',
   },
   align: String as PropType<keyof typeof Align>,
   justify: String as PropType<keyof typeof Justify>,
   wrap: {
     type: Boolean,
-    default: true
+    default: true,
   },
   size: {
     type: String as PropType<keyof typeof Size>,
-    default: 'medium'
-  }
+    default: 'medium',
+  },
 }
 
 export default defineComponent({
@@ -62,12 +62,12 @@ export default defineComponent({
         align ? Align[align] : '',
         justify ? Justify[justify] : '',
         wrap ? 'flex-wrap' : 'flex-nowrap',
-        Size[size]
+        Size[size],
       ]}>
         { children.map((child, index) => (
           <div class={'max-w-full'} key={index}>{ child }</div>
         ))}
       </div>
     )
-  }
+  },
 })

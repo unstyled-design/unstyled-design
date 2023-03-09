@@ -11,7 +11,7 @@ export default defineConfig({
   cleanUrls: 'without-subfolders',
 
   head: [
-    ['link', { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' }]
+    ['link', { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' }],
   ],
 
   themeConfig: {
@@ -21,25 +21,25 @@ export default defineConfig({
 
     sidebar: {
       '/guide/': sidebarGuide(),
-      '/components/': sidebarComponents()
+      '/components/': sidebarComponents(),
     },
 
     editLink: {
-      pattern: 'https://github.com/unstyled-design/unstyled-design/edit/main/packages/:path'
+      pattern: 'https://github.com/unstyled-design/unstyled-design/edit/main/packages/:path',
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/unstyled-design/unstyled-design' }
+      { icon: 'github', link: 'https://github.com/unstyled-design/unstyled-design' },
     ],
 
     footer: {
-      copyright: 'Copyright © 2022-present Hongbusi'
-    }
+      copyright: 'Copyright © 2022-present Hongbusi',
+    },
   },
 
   markdown: {
-    config: md => mdPlugin(md)
-  }
+    config: md => mdPlugin(md),
+  },
 })
 
 function nav() {
@@ -49,9 +49,9 @@ function nav() {
     {
       text: `v${version}`,
       items: [
-        { text: 'Release Notes', link: 'https://github.com/unstyled-design/unstyled-design/releases' }
-      ]
-    }
+        { text: 'Release Notes', link: 'https://github.com/unstyled-design/unstyled-design/releases' },
+      ],
+    },
   ]
 }
 
@@ -61,9 +61,9 @@ function sidebarGuide() {
       text: 'Introduction',
       items: [
         { text: 'What is unstyled-design?', link: '/guide/what-is-unstyled-design' },
-        { text: 'Getting Started', link: '/guide/getting-started' }
-      ]
-    }
+        { text: 'Getting Started', link: '/guide/getting-started' },
+      ],
+    },
   ]
 }
 
@@ -75,16 +75,16 @@ function sidebarComponents() {
         { text: 'Button', link: '/components/button/' },
         { text: 'Link', link: '/components/link/' },
         { text: 'Icon', link: '/components/icon/' },
-        { text: 'Space', link: '/components/space/' }
-      ]
+        { text: 'Space', link: '/components/space/' },
+      ],
     },
     {
       text: 'Form',
       items: [
         { text: 'Switch', link: '/components/switch/' },
         { text: 'Radio', link: '/components/radio/' },
-        { text: 'Select', link: '/components/select/' }
-      ]
-    }
+        { text: 'Select', link: '/components/select/' },
+      ],
+    },
   ]
 }
