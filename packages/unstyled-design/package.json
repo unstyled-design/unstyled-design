@@ -17,6 +17,7 @@
   "keywords": [],
   "exports": {
     ".": {
+      "types": "./dist/types/unstyled-design/index.d.ts",
       "require": "./dist/unstyled-design.umd.cjs",
       "import": "./dist/unstyled-design.js"
     },
@@ -24,12 +25,13 @@
   },
   "main": "./dist/unstyled-design.umd.cjs",
   "module": "./dist/unstyled-design.js",
+  "types": "./dist/types/unstyled-design/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "vite build",
-    "stub": "vite build --watch"
+    "build": "vite build && vue-tsc --declaration --emitDeclarationOnly --skipLibCheck",
+    "stub": "vite build --watch && vue-tsc --declaration --emitDeclarationOnly --skipLibCheck"
   },
   "dependencies": {
     "@unstyled-design/preset-uno": "workspace:*"
