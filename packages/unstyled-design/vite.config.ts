@@ -5,12 +5,11 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 import Unocss from 'unocss/vite'
 
 export default defineConfig({
-  resolve: {
-    alias: {
-      '~': resolve(__dirname, '.'),
-    },
-  },
-
+  plugins: [
+    vue(),
+    vueJsx(),
+    Unocss(),
+  ],
   build: {
     lib: {
       entry: resolve(__dirname, 'index.ts'),
@@ -26,10 +25,4 @@ export default defineConfig({
       },
     },
   },
-
-  plugins: [
-    vue(),
-    vueJsx(),
-    Unocss(),
-  ],
 })
