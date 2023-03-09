@@ -1,4 +1,4 @@
-import { join, resolve } from 'path'
+import { join, resolve } from 'node:path'
 import fs from 'fs-extra'
 import fg from 'fast-glob'
 
@@ -13,8 +13,8 @@ async function listComponents(dir: string, ignore: string[] = []) {
       '_*',
       'dist',
       'node_modules',
-      ...ignore
-    ]
+      ...ignore,
+    ],
   })
   files.sort()
   return files

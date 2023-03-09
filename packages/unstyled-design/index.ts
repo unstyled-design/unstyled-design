@@ -9,7 +9,7 @@ const unstyled = {
     Object.keys(components).forEach((key) => {
       app.component(key, components[key as keyof typeof components])
     })
-  }
+  },
 }
 
 export default unstyled

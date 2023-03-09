@@ -10,6 +10,6 @@ export function presetUnstyled(): Preset {
     theme,
     rules,
     variants,
-    shortcuts
+    shortcuts,
   }
 }

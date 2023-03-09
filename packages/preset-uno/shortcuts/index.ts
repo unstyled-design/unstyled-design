@@ -18,5 +18,5 @@ export default [
   // form
   radioShortcuts,
   switchShortcuts,
-  selectShortcuts
+  selectShortcuts,
 ] as UserShortcuts

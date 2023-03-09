@@ -9,5 +9,5 @@ export default {
   ...DefaultTheme,
   enhanceApp({ app }) {
     app.use(unstyled)
-  }
+  },
 }

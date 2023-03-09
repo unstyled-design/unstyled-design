@@ -7,13 +7,13 @@ enum Type {
   success = 'u-success',
   warning = 'u-warning',
   danger = 'u-danger',
-  info = 'u-info'
+  info = 'u-info',
 }
 
 enum Size {
   'small' = 'u-sm',
   'medium' = 'u-base',
-  'large' = 'u-xl'
+  'large' = 'u-xl',
 }
 
 const buttonProps = {
@@ -21,12 +21,12 @@ const buttonProps = {
   type: String as PropType<keyof typeof Type>,
   size: {
     type: String as PropType<keyof typeof Size>,
-    default: 'medium'
+    default: 'medium',
   },
   plain: Boolean,
   dashed: Boolean,
   round: Boolean,
-  icon: String
+  icon: String,
 }
 
 export default defineComponent({
@@ -46,15 +46,15 @@ export default defineComponent({
             Size[size],
             (type || plain) ? 'u-solid' : '',
             dashed ? 'u-dashed' : '',
-            round ? 'rounded-full' : ''
+            round ? 'rounded-full' : '',
           ],
-          href: to
+          href: to,
         },
         [
           icon ? h(UIcon, { icon }) : undefined,
-          $slots.default?.()
-        ]
+          $slots.default?.(),
+        ],
       )
     )
-  }
+  },
 })

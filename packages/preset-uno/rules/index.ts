@@ -9,7 +9,7 @@ export default [
     const color = parseColor(body, theme)
     if (color?.cssColor?.type === 'rgb' && color.cssColor.components) {
       return {
-        '--u-c-context': `${color.cssColor.components.join(',')}`
+        '--u-c-context': `${color.cssColor.components.join(',')}`,
       }
     }
   }],
@@ -18,11 +18,11 @@ export default [
   ['u-solid', {
     'color': 'white !important',
     'border-color': 'rgba(var(--u-c-context), 1)',
-    'background-color': 'rgba(var(--u-c-context), 1) !important'
+    'background-color': 'rgba(var(--u-c-context), 1) !important',
   }],
   ['u-disabled', {
     'opacity': 0.4,
     'filter': 'saturate(0)',
-    'pointer-events': 'none'
-  }]
+    'pointer-events': 'none',
+  }],
 ] as Rule[]

@@ -39,21 +39,21 @@ export function MarkdownTransform(): Plugin {
           headers: [],
           footers: [
             '\n## Contributors\n',
-            `<Contributors component="${name}" />`
+            `<Contributors component="${name}" />`,
           ],
           scriptSetups: [
-            'const demos = import.meta.glob(\'./demos/*.vue\', { import: \'default\', eager: true })'
-          ]
+            'const demos = import.meta.glob(\'./demos/*.vue\', { import: \'default\', eager: true })',
+          ],
         }
 
         return combineMarkdown(
           code,
           [combineScriptSetup(append.scriptSetups), ...append.headers],
-          append.footers
+          append.footers,
         )
       }
 
       return null
-    }
+    },
   }
 }

@@ -12,6 +12,6 @@ export function Contributors(data): Plugin {
       if (id !== virtualModuleId)
         return null
       return `export default ${JSON.stringify(data)}`
-    }
+    },
   }
 }

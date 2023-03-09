@@ -12,7 +12,7 @@ const selectProps = {
   modelValue: { type: [String, Number, Boolean] as PropType<string | number | boolean | null>, default: null },
   placeholder: { type: String, default: null },
   disabled: { type: Boolean, default: false },
-  options: Array as PropType<Option[]>
+  options: Array as PropType<Option[]>,
 }
 
 export default defineComponent({
@@ -54,5 +54,5 @@ export default defineComponent({
       </select>
       <UIcon class="u-select-suffix" icon="i-carbon:chevron-down" />
     </div>
-  }
+  },
 })

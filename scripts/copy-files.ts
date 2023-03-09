@@ -1,10 +1,10 @@
-import { copyFileSync } from 'fs'
-import { resolve } from 'path'
-import { fileURLToPath } from 'url'
+import { copyFileSync } from 'node:fs'
+import { resolve } from 'node:path'
+import { fileURLToPath } from 'node:url'
 
 // relative to scripts directory
 const destinations = [
-  ['../README.md', '../packages/unstyled-design/README.md']
+  ['../README.md', '../packages/unstyled-design/README.md'],
 ]
 
 const _filename = fileURLToPath(import.meta.url)
