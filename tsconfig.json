@@ -18,7 +18,9 @@
     ],
     "paths": {
       "unstyled-design": ["./packages/unstyled-design/index.ts"],
-      "@unstyled-design/preset-uno": ["./packages/preset-uno/index.ts"]
+      "@unstyled-design/utils": ["./packages/utils/index.ts"],
+      "@unstyled-design/preset-uno": ["./packages/preset-uno/index.ts"],
+      "@unstyled-design/components": ["./packages/components/index.ts"]
     }
   },
   "exclude": [

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { isNumber, isString } from '@hongbusi/utils'
+import { addUnit } from '@unstyled-design/utils'
 import type { SizeType } from './types'
 
 interface Props {
@@ -26,7 +27,11 @@ const avatarClass = computed(() => {
 
 const sizeStyle = computed(() => {
   const { size } = props
-  return isNumber(size) ? { height: `${size}px`, width: `${size}: px` } : undefined
+  if (isNumber(size)) {
+    const value = addUnit(size)
+    return { width: value, height: value }
+  }
+  return undefined
 })
 
 const firstLetterUpper = computed(() => props.name?.charAt(0).toUpperCase())

@@ -1,0 +1,9 @@
+{
+  "name": "@unstyled-design/components",
+  "private": true,
+  "license": "MIT",
+  "main": "index.ts",
+  "dependencies": {
+    "@unstyled-design/utils": "workspace:*"
+  }
+}

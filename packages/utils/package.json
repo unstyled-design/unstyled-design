@@ -1,0 +1,6 @@
+{
+  "name": "@unstyled-design/utils",
+  "private": true,
+  "license": "MIT",
+  "main": "index.ts"
+}
