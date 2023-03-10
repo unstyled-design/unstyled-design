@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { isNumber, isString } from '@hongbusi/utils'
+import { isDef, isNumber, isString } from '@hongbusi/utils'
 import { addUnit } from '@unstyled-design/utils'
 import type { SizeType } from './types'
 
@@ -20,7 +20,9 @@ const sizeClasses: Record<SizeType, string> = {
 const avatarClass = computed(() => {
   const { size } = props
   const classes = ['u-avatar']
-  if (isString(size))
+  if (!isDef(size))
+    classes.push(sizeClasses.medium)
+  else if (isString(size))
     classes.push(sizeClasses[size] ?? sizeClasses.medium)
   return classes
 })
@@ -40,7 +42,7 @@ const firstLetterUpper = computed(() => props.name?.charAt(0).toUpperCase())
 <template>
   <div :class="avatarClass" :style="sizeStyle">
     <img v-if="src" class="u-avatar-img" :src="src">
-    <p v-else-if="firstLetterUpper" class="u-avatar-text">
+    <p v-else-if="firstLetterUpper">
       {{ firstLetterUpper }}
     </p>
   </div>
