@@ -1,7 +1,7 @@
-export * from './button'
-export * from './icon'
-export * from './link'
-export * from './select'
-export * from './space'
-export * from './radio'
-export * from './switch'
+import Avatar from './Avatar.vue'
+
+const components = {
+  Avatar,
+}
+
+export default components

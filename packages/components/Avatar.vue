@@ -4,7 +4,7 @@ import { isDef, isNumber, isString } from '@hongbusi/utils'
 import { addUnit } from '@unstyled-design/utils'
 import type { SizeType } from './types'
 
-interface Props {
+export interface Props {
   src?: string | null
   size?: SizeType | number
   name?: string | null

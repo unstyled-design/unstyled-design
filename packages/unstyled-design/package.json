@@ -34,6 +34,7 @@
     "stub": "vite build --watch && vue-tsc --declaration --emitDeclarationOnly --skipLibCheck"
   },
   "dependencies": {
+    "@unstyled-design/components": "workspace:*",
     "@unstyled-design/preset-uno": "workspace:*"
   }
 }
