@@ -105,8 +105,10 @@ importers:
 
   packages/unstyled-design:
     specifiers:
+      '@unstyled-design/components': workspace:*
       '@unstyled-design/preset-uno': workspace:*
     dependencies:
+      '@unstyled-design/components': link:../components
       '@unstyled-design/preset-uno': link:../preset-uno
 
   packages/utils:
