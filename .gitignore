@@ -13,6 +13,7 @@ dist-ssr
 *.local
 index.json
 packages/unstyled-design/README.md
+packages/.vitepress/cache
 
 # Editor directories and files
 .vscode/*

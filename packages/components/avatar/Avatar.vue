@@ -2,7 +2,7 @@
 import { computed } from 'vue'
 import { isDef, isNumber, isString } from '@hongbusi/utils'
 import { addUnit } from '@unstyled-design/utils'
-import type { SizeType } from './types'
+import type { SizeType } from '../types'
 
 export interface Props {
   src?: string | null

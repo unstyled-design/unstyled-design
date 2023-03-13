@@ -7,8 +7,8 @@ export default defineConfig({
   title: 'unstyled-design',
   description: 'An unstyled Vue3 component library.',
 
+  cleanUrls: true,
   lastUpdated: true,
-  cleanUrls: 'without-subfolders',
 
   head: [
     ['link', { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' }],
@@ -19,10 +19,7 @@ export default defineConfig({
 
     nav: nav(),
 
-    sidebar: {
-      '/guide/': sidebarGuide(),
-      '/components/': sidebarComponents(),
-    },
+    sidebar: getSidebar(),
 
     editLink: {
       pattern: 'https://github.com/unstyled-design/unstyled-design/edit/main/packages/:path',
@@ -45,7 +42,6 @@ export default defineConfig({
 function nav() {
   return [
     { text: 'Guide', link: '/guide/what-is-unstyled-design', activeMatch: '/guide/' },
-    { text: 'Components', link: '/components/button/', activeMatch: '/components/' },
     {
       text: `v${version}`,
       items: [
@@ -55,7 +51,7 @@ function nav() {
   ]
 }
 
-function sidebarGuide() {
+function getSidebar() {
   return [
     {
       text: 'Introduction',
@@ -64,26 +60,10 @@ function sidebarGuide() {
         { text: 'Getting Started', link: '/guide/getting-started' },
       ],
     },
-  ]
-}
-
-function sidebarComponents() {
-  return [
     {
-      text: 'Basic',
+      text: 'Components',
       items: [
-        { text: 'Button', link: '/components/button/' },
-        { text: 'Link', link: '/components/link/' },
-        { text: 'Icon', link: '/components/icon/' },
-        { text: 'Space', link: '/components/space/' },
-      ],
-    },
-    {
-      text: 'Form',
-      items: [
-        { text: 'Switch', link: '/components/switch/' },
-        { text: 'Radio', link: '/components/radio/' },
-        { text: 'Select', link: '/components/select/' },
+        { text: 'Avatar', link: '/components/avatar/' },
       ],
     },
   ]
