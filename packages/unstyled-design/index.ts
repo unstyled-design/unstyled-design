@@ -11,7 +11,6 @@ const unstyled = {
   install: (app: App) => {
     if (app[UNSTYLED_INSTALLED])
       return
-
     app[UNSTYLED_INSTALLED] = true
 
     Object.keys(components).forEach((key) => {
