@@ -1,4 +1,5 @@
-export const linkShortcuts: Record<string, string> = {
-  'u-link': 'u-transition hover:text-primary',
-  'u-link-underline': 'underline underline-offset-2 underline-primary/40 hover:underline-primary/80',
+const link: Record<string, string> = {
+  'u-link': 'cursor-pointer hover:(underline underline-offset-1)',
 }
+
+export default link

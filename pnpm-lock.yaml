@@ -9,7 +9,7 @@ importers:
       '@commitlint/cli': ^17.4.4
       '@commitlint/config-conventional': ^17.4.4
       '@hongbusi/utils': ^0.0.2
-      '@iconify-json/carbon': ^1.1.16
+      '@iconify/json': ^2.2.34
       '@types/fs-extra': ^11.0.1
       '@types/markdown-it': ^12.2.3
       '@types/node': ^18.14.6
@@ -54,7 +54,7 @@ importers:
       '@commitlint/cli': 17.4.4
       '@commitlint/config-conventional': 17.4.4
       '@hongbusi/utils': 0.0.2
-      '@iconify-json/carbon': 1.1.16
+      '@iconify/json': 2.2.34
       '@types/fs-extra': 11.0.1
       '@types/markdown-it': 12.2.3
       '@types/node': 18.14.6
@@ -1337,10 +1337,11 @@ packages:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: true
 
-  /@iconify-json/carbon/1.1.16:
-    resolution: {integrity: sha512-AD8bcnRSGA0WfcGEass2FbA0sagrUzrpFx5WchuDy3uf7yKBWumdypdQK121DH321fQDl5+zZQ26T6gC9knwUQ==}
+  /@iconify/json/2.2.34:
+    resolution: {integrity: sha512-beZo4tqazFlkcSzcWwZUQmBv/sZ2/CuVFAZNhhSdQauDAH8PgaTxb1STuQDNFIZXlUPxa/z2eVBnpttheX0rxA==}
     dependencies:
       '@iconify/types': 2.0.0
+      pathe: 1.1.0
     dev: true
 
   /@iconify/types/2.0.0:
