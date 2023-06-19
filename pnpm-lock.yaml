@@ -22,7 +22,7 @@ importers:
       '@vueuse/core': ^9.13.0
       bumpp: ^9.0.0
       chalk: ^4.1.2
-      consola: ^2.15.3
+      consola: ^3.0.0
       escape-html: ^1.0.3
       eslint: ^8.35.0
       fast-glob: ^3.2.12
@@ -67,7 +67,7 @@ importers:
       '@vueuse/core': 9.13.0_vue@3.2.47
       bumpp: 9.0.0
       chalk: 4.1.2
-      consola: 2.15.3
+      consola: 3.1.0
       escape-html: 1.0.3
       eslint: 8.35.0
       fast-glob: 3.2.12
@@ -2566,6 +2566,10 @@ packages:
 
   /consola/2.15.3:
     resolution: {integrity: sha512-9vAdYbHj6x2fLKC4+oPH0kFzY/orMZyG2Aj+kNylHxKGJ/Ed4dpNyAQYwJOdqO4zdM7XpVHmyejQDcQHrnuXbw==}
+    dev: true
+
+  /consola/3.1.0:
+    resolution: {integrity: sha512-rrrJE6rP0qzl/Srg+C9x/AE5Kxfux7reVm1Wh0wCjuXvih6DqZgqDZe8auTD28fzJ9TF0mHlSDrPpWlujQRo1Q==}
     dev: true
 
   /conventional-changelog-angular/5.0.13:
