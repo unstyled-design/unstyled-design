@@ -45,7 +45,7 @@
     "fast-glob": "^3.2.12",
     "fs-extra": "^11.1.0",
     "husky": "^8.0.3",
-    "lint-staged": "^13.1.2",
+    "lint-staged": "^15.0.0",
     "markdown-it": "^13.0.1",
     "markdown-it-container": "^3.0.0",
     "md5": "^2.3.0",
