@@ -2,7 +2,7 @@
   "name": "unstyled-design-monorepo",
   "version": "0.0.2",
   "private": true,
-  "packageManager": "pnpm@7.29.3",
+  "packageManager": "pnpm@7.33.7",
   "author": "Hongbusi",
   "license": "MIT",
   "scripts": {
