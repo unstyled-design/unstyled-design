@@ -39,7 +39,7 @@
     "@vueuse/core": "^9.13.0",
     "bumpp": "^9.0.0",
     "chalk": "^4.1.2",
-    "consola": "^2.15.3",
+    "consola": "^3.0.0",
     "escape-html": "^1.0.3",
     "eslint": "^8.35.0",
     "fast-glob": "^3.2.12",
